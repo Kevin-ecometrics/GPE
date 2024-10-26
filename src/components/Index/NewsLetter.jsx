@@ -28,7 +28,7 @@ function NewsLetter() {
       <div className="grid grid-cols-1 md:grid-cols-2 md:mt-16">
         <div>
           <video
-            src="https://miller.bslthemes.com/pixy-demo/img/home-4/3.mp4"
+            src="/video.mp4"
             className="w-screen md:h-[800px] object-cover"
             autoPlay
             loop
