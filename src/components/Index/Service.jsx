@@ -11,25 +11,25 @@ function Service() {
   const services = [
     {
       title: "Logística corporativa",
-      link: "/",
+      link: "/service/Logistica-corporativa",
       description:
         "Pieza clave para las finanzas de tu empresa estamos al frente de las actividades y procesos de almacenamiento, trasporte y distribución",
     },
     {
       title: "Administración de Nómina",
-      link: "/",
+      link: "/service/Administracion-de-nomina",
       description:
         "Elemento indispensable donde la supervisión el control estricto del calculo y pagos en tiempo y forma son actividades diarias",
     },
     {
       title: "Asesoría contable",
-      link: "/",
+      link: "/service/Asesoria-contable",
       description:
         "Pieza imprescindible para el patrimonio de tu empresa, brindándote acompañamiento y orientación integral ",
     },
     {
       title: "Asesoría individual",
-      link: "/",
+      link: "/service/Asesoria-laboral-individual",
       description:
         "Proyecta tu crecimiento con un asesoramiento uno a uno para tomar las mejores decisiones para tu patrimonio personal",
     },
@@ -70,12 +70,13 @@ function Service() {
 
     return (
       <motion.div
+        id="services"
         ref={ref}
         animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 20 }}
         transition={{ duration: 1 }}
         initial={{ opacity: 0, y: 50 }}
         key={index}
-        className="flex md:flex-row flex-col justify-between items-start border-b border-gray-800 group md:px-0 px-8"
+        className="flex md:flex-row flex-col justify-between items-start border-b border-gray-800 group md:px-0 px-8 scroll-mt-48"
       >
         <div className="mb-12">
           <h3 className="text-[32px] uppercase mb-8 mt-2 text-[#D2D2D0] group-hover:text-[#CD512F]">
@@ -89,25 +90,27 @@ function Service() {
           </div>
         </div>
         <div className="bg-[#181817] group-hover:bg-[#CD512F] ease-in-out transform transition-transform duration-300 flex flex-col py-4 px-8 ">
-          <div className="flex justify-end items-end">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="48"
-              height="48"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="transform transition-transform duration-300 group-hover:rotate-45"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M17 7l-10 10" />
-              <path d="M8 7l9 0l0 9" />
-            </svg>
-          </div>
-          <p className="text-white text-center uppercase">Leer más</p>
+          <a href={service.link} title={service.title}>
+            <div className="flex justify-end items-end">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="transform transition-transform duration-300 group-hover:rotate-45"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M17 7l-10 10" />
+                <path d="M8 7l9 0l0 9" />
+              </svg>
+            </div>
+            <p className="text-white text-center uppercase">Leer más</p>
+          </a>
         </div>
       </motion.div>
     );

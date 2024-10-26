@@ -3,20 +3,28 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   const words = ["Edificando", "Negocios"];
-
-  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [mouseX, setMouseX] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseMove = (event) => {
-    const { clientX, clientY, currentTarget } = event;
-    const { offsetWidth, offsetHeight } = currentTarget;
-    const x = (clientX - offsetWidth / 2) / 20;
-    const y = (clientY - offsetHeight / 2) / 20;
-    setPosition({ x, y });
+    const rect = event.currentTarget.getBoundingClientRect();
+    setMouseX(event.clientX - rect.left - rect.width / 2);
   };
 
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+    setMouseX(0);
+  };
   return (
-    <section className="py-4 flex md:flex-row flex-col justify-center items-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 w-screen px-8 md:px-0">
+    <section
+      id="hero"
+      className="md:py-4 flex md:flex-row flex-col justify-center items-center"
+    >
+      <div className="grid grid-cols-1 md:grid-cols-2 w-screen px-8 md:px-0 md:py-0 py-40">
         <div className="md:hidden block">
           <img src="/gpeHero2.png" alt="hero element" title="hero element" />
         </div>
@@ -26,7 +34,7 @@ const Hero = () => {
               {word.split("").map((letter, letterIndex) => (
                 <motion.span
                   key={letterIndex}
-                  className="text-[90px] md:text-[112px] text-[#D2D2D0] uppercase"
+                  className="text-[80px] md:text-[112px] text-[#D2D2D0] uppercase"
                   whileHover={{ scale: 1.2 }}
                 >
                   {letter}
@@ -35,19 +43,32 @@ const Hero = () => {
             </div>
           ))}
         </div>
-        <div
-          className="md:flex hidden justify-center items-center"
-          onMouseMove={handleMouseMove}
-        >
+        <div className="md:flex hidden justify-center items-center">
           <motion.img
             src="/gpeHero2.png"
             alt="hero element"
             title="hero element"
+            className="translate-y-[-200px]"
             animate={{
-              x: position.x,
-              y: position.y,
+              y: [-200, 0, -200],
+              x: isHovered ? mouseX * -0.3 : 0,
             }}
-            transition={{ type: "spring", stiffness: 300 }}
+            transition={{
+              y: {
+                duration: 7,
+                ease: "easeInOut",
+                repeat: Infinity,
+                repeatType: "loop",
+              },
+              x: {
+                type: "spring",
+                stiffness: 300,
+                damping: 30,
+              },
+            }}
+            onMouseMove={handleMouseMove}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
           />
         </div>
       </div>

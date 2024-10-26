@@ -1,7 +1,16 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 function NewsLetter() {
   // Función que renderiza el texto con animación
+
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(email);
+  };
+
   const renderText = (text) => {
     return text.split("").map((char, index) => (
       <motion.span
@@ -39,13 +48,16 @@ function NewsLetter() {
             {renderText("valiosa a tu ")}
             <span className="text-[#CD512F]">bandeja</span>
           </h2>
-          <div className="relative">
+          <form onSubmit={handleSubmit} className="relative">
             <input
               type="email"
+              name="email"
+              onChange={(e) => setEmail(e.target.value)}
               className="w-80 bg-black border border-white rounded-full p-6 text-white"
               placeholder="Enter Your Email"
             />
             <button
+              type="submit"
               className="bg-[#CD512F] hover:bg-white hover:text-orange-600 transition-transform 
             duration-300 ease-in-out
           text-white rounded-full p-4 absolute right-2  top-2 "
@@ -65,15 +77,15 @@ function NewsLetter() {
                 <path d="M13 6l6 6" />
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 px-4 md:px-0">
         <div className="bg-[#CD512F] ml-[28%] h-32 hidden md:block"></div>
         <div>
           <p className="text-start py-4 md:p-8 md:w-[80%]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
-            fugiat nostrum sed ad odio error. Dolorem iusto fugit quas harum!
+            Al suscribirte a nuestra lista de correo, siempre estarás
+            actualizado con las últimas noticias de nosotros.{" "}
           </p>
         </div>
       </div>

@@ -33,13 +33,13 @@ function Sponsors() {
   });
 
   return (
-    <div>
+    <div className="mb-8 py-16">
       <Observer>
         <div className="flex md:flex-row flex-col gap-8 md:gap-0 justify-between items-center px-8 md:px-0 md:w-[80%] mx-auto mb-16">
-          <img src="/1.webp" alt="" />
-          <img src="/2.webp" alt="" />
-          <img src="/3.webp" alt="" />
-          <img src="/4.webp" alt="" />
+          <img src="/1.webp" alt="partner" title="partner" />
+          <img src="/2.webp" alt="partner" title="partner" />
+          <img src="/3.webp" alt="partner" title="partner" />
+          <img src="/4.webp" alt="partner" title="partner" />
         </div>
       </Observer>
       <div>
@@ -53,20 +53,6 @@ function Sponsors() {
           <h2 className="text-3xl md:text-5xl text-start md:text-center uppercase space-y-4 px-8 md:px-1">
             {words}
           </h2>
-        </Observer>
-      </div>
-      <div className="flex flex-col md:flex-row md:justify-center md:items-center justify-start items-start  gap-4 py-8 px-8 md:px-0">
-        <Observer>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        </Observer>
-        <Observer>
-          <p
-            className="border border-white px-12 py-4 rounded-3xl 
-         uppercase bg-transparent hover:bg-white transition-all duration-300 cursor-pointer hover:text-[#CD512F] hover:border-[#CD512F]
-        "
-          >
-            Lorem, ipsum.{" "}
-          </p>
         </Observer>
       </div>
     </div>

@@ -1,35 +1,8 @@
+import blogs from "@components/Index/ListBlogs";
+
 function Blog() {
-  const blogs = [
-    {
-      id: 1,
-      title: "Blog 1",
-      image: "https://miller.bslthemes.com/pixy-demo/img/blog/9.jpg",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi. Duis eget justo auctor, ornare nunc in, ultrices odio. Nullam non nisi nec purus ultricies lacinia. Duis eget justo auctor, ornare nunc in, ultrices odio. Nullam non nisi nec purus ultricies lacinia.",
-      date: "2021-10-10",
-      theme: "laboral",
-    },
-    {
-      id: 2,
-      title: "Blog 2",
-      image: "https://miller.bslthemes.com/pixy-demo/img/blog/9.jpg",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi. Duis eget justo auctor, ornare nunc in, ultrices odio. Nullam non nisi nec purus ultricies lacinia. Duis eget justo auctor, ornare nunc in, ultrices odio. Nullam non nisi nec purus ultricies lacinia.",
-      date: "2021.10.10",
-      theme: "fiscal",
-    },
-    {
-      id: 3,
-      title: "Blog 3",
-      image: "https://miller.bslthemes.com/pixy-demo/img/blog/9.jpg",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi. Duis eget justo auctor, ornare nunc in, ultrices odio. Nullam non nisi nec purus ultricies lacinia. Duis eget justo auctor, ornare nunc in, ultrices odio. Nullam non nisi nec purus ultricies lacinia.",
-      date: "2021.10.10",
-      theme: "fiscal",
-    },
-  ];
   return (
-    <div>
+    <div className="scroll-mt-16 " id="blog">
       <div className="md:container mx-auto px-8 md:px-0">
         <p className="uppercase text-xl mb-8">Newsletter</p>
         <div className="flex justify-between items-start md:items-end mb-8 md:flex-row flex-col">
@@ -39,13 +12,13 @@ function Blog() {
             <span className="text-[#CD512F]">laboral</span>
           </h1>
           <div className="flex gap-2 group py-4 md:py-0">
-            <a href="/blogs">
+            <a href="/blogs" title="Blogs">
               <p className="uppercase group relative inline-block">
                 Mira todos nuestras publicaciones
                 <span className="absolute left-0 bottom-0 w-full h-[2px] bg-white scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
               </p>{" "}
             </a>
-            <a href="/blogs">
+            <a href="/blogs" title="Blogs">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -66,10 +39,14 @@ function Blog() {
         </div>
         <div className="flex gap-16 overflow-x-hidden flex-col md:flex-row">
           {blogs.slice(0, 2).map((blog, index) => (
-            <div className="md:w-[50%] relative group" key={index}>
+            <div
+              className=" overflow-hidden md:w-[50%] relative group"
+              key={index}
+            >
               <img
                 src={blog.image}
-                alt="blog"
+                alt="Blog"
+                title="Blog"
                 className="w-full h-[400px] object-cover
                 hover:scale-105 transition-transform duration-300 
                 "

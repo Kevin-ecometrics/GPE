@@ -45,7 +45,12 @@ function Client() {
             }}
             className="relative hover:text-[#CD512F]"
           >
-            <img src={item.imgSrc} alt={item.title} className="mx-auto mb-8" />
+            <img
+              src={item.imgSrc}
+              alt={item.title}
+              title={item.title}
+              className="mx-auto mb-8"
+            />
             <h3 className="text-[24px]  mb-4 mt-2 ">{item.title}</h3>
           </motion.div>
           <motion.p

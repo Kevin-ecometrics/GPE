@@ -26,7 +26,12 @@ function Contact() {
         </div>
         <div className="flex justify-center items-center py-8 md:py-0 px-8 md:px-0">
           <Observer>
-            <img src="/contact.jpg" alt="" className="md:w-screen" />
+            <img
+              src="/contact.webp"
+              alt="Image Contact"
+              title="Image Contact"
+              className="md:w-screen"
+            />
           </Observer>
         </div>
       </div>
@@ -45,9 +50,11 @@ function Contact() {
         </div>
         <div className="bg-[#CD512F] h-[120px] w-[320px] flex justify-center items-center">
           <Observer>
-            <p className="text-white uppercase rounded-3xl border px-8 py-4 font-bold hover:bg-white hover:text-[#CD512F] hover:border-[#CD512F] transition-all duration-300 cursor-pointer">
-              Contactanos
-            </p>
+            <a href="/contact" title="contacto">
+              <p className="text-white uppercase rounded-3xl border px-8 py-4 font-bold hover:bg-white hover:text-[#CD512F] hover:border-[#CD512F] transition-all duration-300 cursor-pointer">
+                Contactanos
+              </p>
+            </a>
           </Observer>
         </div>
       </div>

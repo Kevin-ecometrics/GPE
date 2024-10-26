@@ -1,39 +1,54 @@
-import React from "react";
-import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import Hero from "@components/Service/Hero";
+import ContainerLayout from "@components/Layout/Layout";
+import Header from "@components/Index/Header";
+import { list, text } from "@components/Service/ListService";
+import Tema1 from "@components/Service/Tema1";
+import Tema2 from "@components/Service/Tema2";
+import Tema3 from "@components/Service/Tema3";
+import Tema4 from "@components/Service/Tema4";
+import { useLocation } from "react-router-dom";
+import Footer from "@components/Index/Footer";
+import NewsLetter from "@components/Index/NewsLetter";
 
 function Service() {
-  const pageVariants = {
-    initial: {
-      opacity: 0,
-      x: "100vw",
-    },
-    in: {
-      opacity: 1,
-      x: 0,
-    },
-    out: {
-      opacity: 0,
-      x: "-100vw",
-    },
+  const pathname = useLocation().pathname;
+  const id = pathname.split("/").pop();
+  const [description, setDescription] = useState("");
+
+  useEffect(() => {
+    const index = list.indexOf(id);
+    if (index === -1) {
+      window.location.href = "/";
+    } else {
+      setDescription(text[index]);
+    }
+  }, [id]);
+
+  const formatText = (text) => {
+    return text.replace(/-/g, " ");
   };
 
-  const pageTransition = {
-    type: "tween",
-    ease: "anticipate",
-    duration: 1.5,
-  };
+  const formattedText = formatText(id);
 
   return (
-    <motion.main
-      initial="initial"
-      animate="in"
-      exit="out"
-      variants={pageVariants}
-      transition={pageTransition}
-      className="h-screen justify-center items-center flex bg-white"
-    >
-      <h1>Service Page</h1>
-    </motion.main>
+    <div className="overflow-x-hidden">
+      <Header />
+      <ContainerLayout>
+        <Hero title={formattedText} subtitle={description} />
+        {id === "Logistica-corporativa" ? (
+          <Tema1 />
+        ) : id === "Administracion-de-nomina" ? (
+          <Tema2 />
+        ) : id === "Asesoria-contable" ? (
+          <Tema3 />
+        ) : id === "Asesoria-laboral-individual" ? (
+          <Tema4 />
+        ) : null}
+        <NewsLetter />
+        <Footer />
+      </ContainerLayout>
+    </div>
   );
 }
 

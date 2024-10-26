@@ -71,8 +71,11 @@ function Reviews() {
   };
 
   return (
-    <div className="flex overflow-x-hidden justify-center items-center py-16 flex-col px-8 md:px-0">
-      <p className="text-2xl uppercase mb-12">Reviews</p>
+    <div
+      className="flex overflow-x-hidden justify-center items-center py-16 flex-col px-8 md:px-0 scroll-mt-16"
+      id="reviews"
+    >
+      <p className="text-2xl uppercase mb-12">Reseñas</p>
       <h2 className="text-4xl md:text-6xl mb-16 uppercase">
         Lo que nuestro <span className="text-[#CD512F]">trabajo</span> dice, la{" "}
         {""}
