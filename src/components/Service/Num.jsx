@@ -25,7 +25,7 @@ function Num() {
       <h2 className="uppercase text-5xl mb-8">Clientes satisfechos</h2>
       <h1 className="text-6xl mb-4">
         {num}
-        <span className="text-[#CD512F]">+</span>
+        <span className="text-[#F29829]">+</span>
       </h1>
     </div>
   );

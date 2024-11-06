@@ -24,35 +24,35 @@ function Tema2() {
       <div>
         <h1 className="text-5xl mb-4 uppercase">Principales servicios</h1>
         <div className="flex gap-4 items-center mb-4">
-          <span className="font-bold text-2xl text-[#CD512F]">01.</span>
+          <span className="font-bold text-2xl text-[#F29829]">01.</span>
           <h1 className="text-2xl uppercase">Registro Patronal</h1>
         </div>
         <div className="flex gap-4 items-center mb-4">
-          <span className="font-bold text-2xl text-[#CD512F]">02.</span>
+          <span className="font-bold text-2xl text-[#F29829]">02.</span>
           <h1 className="text-2xl uppercase"> Movimientos afiliatorios</h1>
         </div>
         <p className="mb-4 text-xl">Altas, Bajas y Avisos</p>
 
         <div className="flex gap-4 items-center mb-4">
-          <span className="font-bold text-2xl text-[#CD512F]">03.</span>
+          <span className="font-bold text-2xl text-[#F29829]">03.</span>
           <h1 className="text-2xl uppercase">Cálculo de nómina</h1>
         </div>
         <div className="flex gap-4 items-center mb-4">
-          <span className="font-bold text-2xl text-[#CD512F]">04.</span>
+          <span className="font-bold text-2xl text-[#F29829]">04.</span>
           <h1 className="text-2xl uppercase">
             {" "}
             Dispersión en el pago de nómina
           </h1>
         </div>
         <div className="flex gap-4 items-center mb-4">
-          <span className="font-bold text-2xl text-[#CD512F]">05.</span>
+          <span className="font-bold text-2xl text-[#F29829]">05.</span>
           <h1 className="text-2xl uppercase">
             {" "}
             Asesoría de capitales constitutivos
           </h1>
         </div>
         <div className="flex gap-4 items-center mb-4">
-          <span className="font-bold text-2xl text-[#CD512F]">06.</span>
+          <span className="font-bold text-2xl text-[#F29829]">06.</span>
           <h1 className="text-2xl uppercase"> Timbrado de recibos de nómina</h1>
         </div>
       </div>

@@ -13,25 +13,25 @@ function Service() {
       title: "Logística corporativa",
       link: "/service/Logistica-corporativa",
       description:
-        "Pieza clave para las finanzas de tu empresa estamos al frente de las actividades y procesos de almacenamiento, trasporte y distribución",
+        "Explora a fondo la pieza fundamental para la constitución, organización y gestión eficiente de tu  empresa, que permite la correcta realización de trámites, obtención de permisos y cumplimiento de obligaciones fiscales y contables.",
     },
     {
       title: "Administración de Nómina",
       link: "/service/Administracion-de-nomina",
       description:
-        "Elemento indispensable donde la supervisión el control estricto del calculo y pagos en tiempo y forma son actividades diarias",
+        "Conoce a fondo el elemento esencial para la óptima gestión y control de pagos e impuestos, asegurando el estricto cumplimiento de las regulaciones laborales y fiscales vigentes para la retención talento. ",
     },
     {
       title: "Asesoría contable",
       link: "/service/Asesoria-contable",
       description:
-        "Pieza imprescindible para el patrimonio de tu empresa, brindándote acompañamiento y orientación integral ",
+        "Adéntrate en la pieza imprescindible para el patrimonio de tu empresa dónde te proporcionamos un acompañamiento y asesoría integral asegurando una planeación estratégica alineada a los objetivos financieros de tu empresa.",
     },
     {
       title: "Asesoría individual",
       link: "/service/Asesoria-laboral-individual",
       description:
-        "Proyecta tu crecimiento con un asesoramiento uno a uno para tomar las mejores decisiones para tu patrimonio personal",
+        "Conoce como impulsar el crecimiento de tu patrimonio con un enfoque integral orientado a una meticulosa planificación financiera que permita estructurar recursos, analizar riesgos y garantizar el cumplimiento de todas las normativas fiscales y laborales. ",
     },
   ];
 
@@ -49,15 +49,15 @@ function Service() {
     if (index === 0) {
       return (
         <>
-          Protegemos tus <span className="text-[#CD512F]">finanzas</span> y
-          defendemos tus <span className="text-[#CD512F]">derechos</span>.
+          Protegemos tus <span className="text-[#F29829]">finanzas</span> y
+          defendemos tus <span className="text-[#F29829]">derechos</span>.
         </>
       );
     } else if (index === 1) {
       return (
         <>
-          Tu respaldo <span className="text-[#CD512F]">financiero</span> y legal
-          en un solo <span className="text-[#CD512F]">lugar</span> .
+          Tu respaldo <span className="text-[#F29829]">financiero</span> y legal
+          en un solo <span className="text-[#F29829]">lugar</span> .
         </>
       );
     }
@@ -79,17 +79,17 @@ function Service() {
         className="flex md:flex-row flex-col justify-between items-start border-b border-gray-800 group md:px-0 px-8 scroll-mt-48"
       >
         <div className="mb-12">
-          <h3 className="text-[32px] uppercase mb-8 mt-2 text-[#D2D2D0] group-hover:text-[#CD512F]">
+          <h3 className="text-[32px] uppercase mb-8 mt-2 text-[#D2D2D0] group-hover:text-[#F29829]">
             {service.title}
           </h3>
           <div className="flex gap-8">
-            <div className="border w-0 bg-[#CD512F] border-[#CD512F]"></div>
+            <div className="border w-0 bg-[#F29829] border-[#F29829]"></div>
             <p className="text-[16px] mt-1 text-[#D2D2D099]">
               {service.description}
             </p>
           </div>
         </div>
-        <div className="bg-[#181817] group-hover:bg-[#CD512F] ease-in-out transform transition-transform duration-300 flex flex-col py-4 px-8 ">
+        <div className="bg-[#181817] group-hover:bg-[#F29829] ease-in-out transform transition-transform duration-300 flex flex-col py-4 px-8 ">
           <a href={service.link} title={service.title}>
             <div className="flex justify-end items-end">
               <svg

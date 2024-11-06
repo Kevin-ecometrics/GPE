@@ -1,7 +1,7 @@
 function Privacy() {
   return (
     <div>
-      <h1 className="text-start text-[#CD512F] mb-4">
+      <h1 className="text-start text-[#F29829] mb-4">
         Políticas de privacidad
       </h1>
       <p className="text-black">

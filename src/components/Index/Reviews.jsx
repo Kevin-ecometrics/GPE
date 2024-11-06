@@ -75,16 +75,16 @@ function Reviews() {
       className="flex overflow-x-hidden justify-center items-center py-16 flex-col px-8 md:px-0 scroll-mt-16"
       id="reviews"
     >
-      <p className="text-2xl uppercase mb-12">Reseñas</p>
+      <p className="text-lg uppercase mb-12">Reseñas</p>
       <h2 className="text-4xl md:text-6xl mb-16 uppercase">
-        Lo que nuestro <span className="text-[#CD512F]">trabajo</span> dice, la{" "}
+        Lo que nuestro <span className="text-[#F29829]">trabajo</span> dice, la{" "}
         {""}
-        <span className="text-[#CD512F]">voz</span> de nuestros{" "}
-        <span className="text-[#CD512F]">clientes</span>
+        <span className="text-[#F29829]">voz</span> de nuestros{" "}
+        <span className="text-[#F29829]">clientes</span>
       </h2>
       <div className="flex md:justify-between items-center md:w-[70%] mx-auto px-8">
         <div
-          className="bg-orange-500 p-2 rounded-full cursor-pointer hidden md:block"
+          className="bg-[#F29829] p-2 rounded-full cursor-pointer hidden md:block"
           onClick={handlePrev}
         >
           <svg
@@ -163,7 +163,7 @@ function Reviews() {
           </AnimatePresence>
         </div>
         <div
-          className="bg-orange-500 p-2 rounded-full cursor-pointer hidden md:block"
+          className="bg-[#F29829] p-2 rounded-full cursor-pointer hidden md:block"
           onClick={handleNext}
         >
           <svg
@@ -186,8 +186,8 @@ function Reviews() {
         {reviews.map((review, index) => (
           <div
             key={index}
-            className={`w-4 h-4 rounded-full mx-2 cursor-pointer ${
-              index === currentIndex ? "bg-[#CD512F]" : "bg-gray-300"
+            className={`w-3 h-3 rounded-full mx-2 cursor-pointer ${
+              index === currentIndex ? "bg-[#F29829]" : "bg-gray-300"
             }`}
             onClick={() => setCurrentIndex(index)}
           ></div>

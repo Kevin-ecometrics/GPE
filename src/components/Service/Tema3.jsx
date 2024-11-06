@@ -22,13 +22,13 @@ function Tema3() {
       <div>
         <h1 className="text-5xl mb-4 uppercase">Principales servicios</h1>
         <div className="flex gap-4 items-center mb-4">
-          <span className="font-bold text-2xl text-[#CD512F]">01.</span>
+          <span className="font-bold text-2xl text-[#F29829]">01.</span>
           <h1 className="text-2xl uppercase">Consulta de situación fiscal</h1>
         </div>
         <p className="text-xl mb-2">Servicios de Administración Tributaria</p>
         <p className="text-xl mb-4">Control de ingresos y egresos</p>
         <div className="flex gap-4 items-center mb-4">
-          <span className="font-bold text-2xl text-[#CD512F]">02.</span>
+          <span className="font-bold text-2xl text-[#F29829]">02.</span>
           <h1 className="text-2xl uppercase">Declaraciones</h1>
         </div>
         <p className="text-xl mb-2">
@@ -41,11 +41,11 @@ function Tema3() {
           Elaboración y correcciones de declaración anual
         </p>
         <div className="flex gap-4 items-center mb-4">
-          <span className="font-bold text-2xl text-[#CD512F]">03.</span>
+          <span className="font-bold text-2xl text-[#F29829]">03.</span>
           <h1 className="text-2xl uppercase"> Facturas y notas de crédito</h1>
         </div>
         <div className="flex gap-4 items-center mb-4">
-          <span className="font-bold text-2xl text-[#CD512F]">04.</span>
+          <span className="font-bold text-2xl text-[#F29829]">04.</span>
           <h1 className="text-2xl uppercase"> Estados financieros mensuales</h1>
         </div>
       </div>

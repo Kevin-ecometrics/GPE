@@ -1,7 +1,7 @@
 function Sitemap() {
   return (
     <div>
-      <h1 className="text-start text-[#CD512F] mb-4">
+      <h1 className="text-start text-[#F29829] mb-4">
         Encuentranos en la siguiente dirección
       </h1>
       <iframe

@@ -20,11 +20,11 @@ function TeamMembers() {
                 title={member.name}
                 className="w-full"
               />
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 flex-col group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute inset-0 flex items-center justify-center bg-[#F29829] bg-opacity-20 opacity-0 flex-col group-hover:opacity-100 transition-opacity duration-300">
                 <p className="text-white uppercase text-xl transform translate-y-96 group-hover:translate-y-32 transition-transform duration-500 mb-4">
                   {member.name}
                 </p>
-                <p className="text-orange-500 font-bold text-xl transform translate-y-96 group-hover:translate-y-32 transition-transform duration-500 uppercase">
+                <p className="text-[#F29829] font-bold text-xl transform translate-y-96 group-hover:translate-y-32 transition-transform duration-500 uppercase">
                   {member.job}
                 </p>
               </div>

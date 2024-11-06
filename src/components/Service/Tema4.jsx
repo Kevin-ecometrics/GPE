@@ -23,11 +23,11 @@ function Tema4() {
       <div>
         <h1 className="text-5xl mb-4 uppercase">Principales servicios</h1>
         <div className="flex gap-4 items-center mb-4">
-          <span className="font-bold text-2xl text-[#CD512F]">01.</span>
+          <span className="font-bold text-2xl text-[#F29829]">01.</span>
           <h1 className="text-2xl uppercase">Estrategia Patronal </h1>
         </div>
         <div className="flex gap-4 items-center mb-4">
-          <span className="font-bold text-2xl text-[#CD512F]">02.</span>
+          <span className="font-bold text-2xl text-[#F29829]">02.</span>
           <h1 className="text-2xl uppercase">
             {" "}
             Representación legal y litigio especializado
@@ -40,14 +40,14 @@ function Tema4() {
         </p>
         <p className="text-xl mb-4">lirevención de contingencias legales</p>
         <div className="flex gap-4 items-center mb-4">
-          <span className="font-bold text-2xl text-[#CD512F]">03.</span>
+          <span className="font-bold text-2xl text-[#F29829]">03.</span>
           <h1 className="text-2xl uppercase"> Inspecciones </h1>
         </div>
         <p className="text-xl mb-4">
           Elaboración y ratificación de reglamento interno de trabajo{" "}
         </p>
         <div className="flex gap-4 items-center mb-4">
-          <span className="font-bold text-2xl text-[#CD512F]">04.</span>
+          <span className="font-bold text-2xl text-[#F29829]">04.</span>
           <h1 className="text-2xl uppercase"> Capacitación al personal </h1>
         </div>
         <p className="text-xl mb-2">
@@ -69,7 +69,7 @@ function Tema4() {
           Implementación de protocolo psicosocial (NOM-035)
         </p>
         <div className="flex gap-4 items-center mb-4">
-          <span className="font-bold text-2xl text-[#CD512F]">05.</span>
+          <span className="font-bold text-2xl text-[#F29829]">05.</span>
           <h1 className="text-2xl uppercase"> Auditoria Laboral </h1>
         </div>
         <p className="text-xl mb-4">

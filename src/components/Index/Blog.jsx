@@ -4,12 +4,11 @@ function Blog() {
   return (
     <div className="scroll-mt-16 " id="blog">
       <div className="md:container mx-auto px-8 md:px-0">
-        <p className="uppercase text-xl mb-8">Newsletter</p>
+        <p className="uppercase text-lg mb-8">GACETA</p>
         <div className="flex justify-between items-start md:items-end mb-8 md:flex-row flex-col">
           <h1 className="text-5xl uppercase">
-            GACETA GPE Lo más nuevo en materia{" "}
-            <span className="text-[#CD512F]">fiscal</span> y{" "}
-            <span className="text-[#CD512F]">laboral</span>
+            GACETA en materia <span className="text-[#F29829]">fiscal</span> y{" "}
+            <span className="text-[#F29829]">laboral</span>
           </h1>
           <div className="flex gap-2 group py-4 md:py-0">
             <a href="/blogs" title="Blogs">
@@ -56,7 +55,7 @@ function Blog() {
                   <h1 className="text-3xl uppercase mb-4">{blog.title}</h1>
                   <p>{blog.description}</p>
                 </div>
-                <div className="md:w-96 w-full h-32 bg-gray-900 group-hover:bg-[#CD512F]">
+                <div className="md:w-96 w-full h-32 bg-gray-900 group-hover:bg-[#F29829]">
                   <div className="flex justify-end items-center px-2 mb-4">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

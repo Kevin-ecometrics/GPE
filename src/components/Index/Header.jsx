@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import blogs from "@components/Index/ListBlogs";
 import { useLocation } from "react-router-dom";
 import PoliticasDePrivacidad from "@components/Modal/Privacy";
@@ -38,6 +38,7 @@ function Header() {
   const [activeLink, setActiveLink] = useState("");
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [modalContent, setModalContent] = useState(null);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const handleURL = (link) => {
     setActiveLink(link);
@@ -65,6 +66,21 @@ function Header() {
     setModalIsOpen(false);
     setModalContent(null);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const Modal = ({ isOpen, content, onClose }) => {
     if (!isOpen) return null;
@@ -94,7 +110,7 @@ function Header() {
                     fill="none"
                     stroke="currentColor"
                     strokeWidth="2"
-                    className="hover:text-[#CD512F]"
+                    className="hover:text-[#F29829]"
                   >
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <path d="M18 6l-12 12" />
@@ -111,10 +127,19 @@ function Header() {
   };
 
   return (
-    <nav className="shadow-2xl shadow-gray-800 z-10 bg-black fixed w-full scroll-smooth">
+    <nav
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        menu
+          ? "bg-black"
+          : isScrolled
+          ? "bg-black bg-opacity-80"
+          : "bg-transparent"
+      }`}
+    >
+      {" "}
       <Modal isOpen={modalIsOpen} content={modalContent} onClose={closeModal} />
-      <div className="container mx-auto flex justify-between items-center py-4 px-4 h-[160px]">
-        <a href="/" title="Home">
+      <div className="container mx-auto flex justify-between items-center py-4 px-8 h-[140px]">
+        <a href="/home" title="Home">
           <img
             src={Logo}
             className="w-12 h-12"
@@ -125,8 +150,8 @@ function Header() {
 
         {menu
           ? null
-          : urlMain === "/" && (
-              <ul className="md:flex hidden">
+          : (urlMain === "/home" || urlMain === "/") && (
+              <ul className="md:flex hidden z-30">
                 {list.map((item, index) => (
                   <a
                     href={item.link}
@@ -203,12 +228,12 @@ function Header() {
       </div>
       {menu && (
         <div
-          className="flex justify-center items-start border-t-2 border-gray-700   
+          className="flex justify-center items-start border-t-2 bg-black border-gray-700   
         "
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 container mx-auto h-screen md:px-0 px-4">
             <div className="md:py-24">
-              {urlMain === "/" && (
+              {(urlMain === "/" || urlMain === "/home") && (
                 <ul className=" uppercase text-2xl ">
                   {list.map((item, index) => (
                     <li key={index} className="mb-4 py-4">
@@ -233,7 +258,7 @@ function Header() {
                         title={item.name}
                         onClick={() => handleURLMenu(item.link)}
                         className={`hover:text-white uppercase ${
-                          urlMain === item.link ? "text-[#CD512F]" : ""
+                          urlMain === item.link ? "text-[#F29829]" : ""
                         }`}
                       >
                         {item.name}
@@ -261,6 +286,14 @@ function Header() {
               {urlMain === "/blogs/" && (
                 <div className="flex flex-col gap-4">
                   <p className="text-2xl uppercase">Blogs</p>
+                  <p className="text-lg">Tel: 55 1234 5678</p>
+                  <p className="text-lg">Email: </p>
+                  <p className="text-lg">Direccion: </p>
+                </div>
+              )}
+              {urlMain === "/team" && (
+                <div className="flex flex-col gap-4">
+                  <p className="text-2xl uppercase">Equipo</p>
                   <p className="text-lg">Tel: 55 1234 5678</p>
                   <p className="text-lg">Email: </p>
                   <p className="text-lg">Direccion: </p>

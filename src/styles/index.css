@@ -12,6 +12,8 @@ body {
   background-color: #000000;
   color: #D2D2D0;
   font-family: 'Anton', sans-serif;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 p {
@@ -19,4 +21,6 @@ p {
   color: #D2D2D099;
 }
 
-
+::-webkit-scrollbar{
+  display: none;
+}

@@ -12,7 +12,7 @@ function Sponsors() {
       )
     ) {
       return (
-        <span key={index} className="text-[#CD512F]">
+        <span key={index} className="text-[#F29829]">
           {word}{" "}
         </span>
       );
@@ -50,7 +50,7 @@ function Sponsors() {
         </Observer>
 
         <Observer>
-          <h2 className="text-3xl md:text-5xl text-start md:text-center uppercase space-y-4 px-8 md:px-1">
+          <h2 className="text-3xl md:text-5xl text-start  md:text-center uppercase space-y-4 px-8 md:px-1">
             {words}
           </h2>
         </Observer>

@@ -3,6 +3,7 @@ import Index from "@pages/Index";
 import Contact from "@pages/Contact";
 import Service from "@pages/Service";
 import Blogs from "@pages/Blogs";
+import Home from "@pages/Home";
 import BlogsDinamic from "@pages/BlogsDinamic";
 import Team from "@pages/Team";
 import "@styles/index.css";
@@ -12,6 +13,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Index />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/service/:id" element={<Service />} />
         <Route path="/team" element={<Team />} />

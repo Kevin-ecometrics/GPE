@@ -8,7 +8,7 @@ const Hero = ({ title, subtitle }) => {
   ];
 
   return (
-    <div className="md:h-screen uppercase flex justify-center items-center flex-col py-64">
+    <div className=" uppercase flex justify-center items-center flex-col md:py-16">
       <div className="flex mb-8 md:mb-0">
         <a href="/">
           <p className="hover:text-white">Inicio </p>
@@ -16,7 +16,7 @@ const Hero = ({ title, subtitle }) => {
         &nbsp;
         <p>/</p>
         &nbsp;
-        <p className="text-[#CD512F]">Servicio</p>
+        <p className="text-[#F29829]">Servicio</p>
       </div>
       <h1 className="text-3xl md:text-7xl md:py-8 text-center mb-16">
         {title}

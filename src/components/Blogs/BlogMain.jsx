@@ -5,11 +5,11 @@ function BlogMain() {
   const tema = id.replace(/-/g, " ");
   return (
     <div>
-      <div className="container mx-auto px-8 md:py-48">
+      <div className="container mx-auto px-8 md:py-16">
         <a href="/blogs">
           <p className=" hover:text-white uppercase text-center mb-12">
             Inicio &nbsp; / &nbsp;{" "}
-            <span className="text-[#CD512F]">publicación </span>
+            <span className="text-[#F29829]">publicación </span>
           </p>
         </a>
 
@@ -69,7 +69,7 @@ function BlogMain() {
           </div>
         </div>
         <h1 className="uppercase text-5xl py-16">
-          Blogs <span className="text-[#CD512F] font-bold">similares</span>{" "}
+          Blogs <span className="text-[#F29829] font-bold">similares</span>{" "}
         </h1>
         <div className="flex gap-8">
           {Recent.map(({ image, title, description, theme, date, id }) => (
@@ -92,7 +92,7 @@ function BlogMain() {
                       {date}
                     </p>
                   </div>
-                  <div className="h-32 w-64 p-4 flex justify-center items-center bg-gray-900  group-hover:bg-[#CD512F]">
+                  <div className="h-32 w-64 p-4 flex justify-center items-center bg-gray-900  group-hover:bg-[#F29829]">
                     <h3 className="uppercase">Saber más</h3>
                   </div>{" "}
                 </div>

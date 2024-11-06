@@ -12,22 +12,20 @@ function Hero() {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center py-48 uppercase">
+    <div className="flex flex-col justify-center items-center py-8 md:py-16 uppercase">
       <div className="flex mb-16">
         <a href="/">
-          <p className="font-bold hover:text-orange-500 cursor-pointer">
-            Inicio /
-          </p>
+          <p className=" hover:text-white cursor-pointer">Inicio /</p>
         </a>{" "}
         &nbsp;
         <p>
-          <span className="font-bold text-orange-500 cursor-pointer">
-            Equipo
-          </span>
+          <span className="text-[#F29829] cursor-pointer">Equipo</span>
         </p>
       </div>
 
-      <h1 className="uppercase text-7xl mb-16">Mira nuestro equipo de GPE</h1>
+      <h1 className="uppercase text-7xl px-8 mb-16">
+        Mira nuestro equipo de GPE
+      </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {team.map((member, index) => (
           <div key={index} className="relative group">

@@ -24,7 +24,7 @@ function Tema1() {
       <div>
         <h1 className="text-5xl mb-4 uppercase">Principales servicios</h1>
         <div className="flex gap-4 items-center mb-4">
-          <span className="font-bold text-2xl text-[#CD512F]">01.</span>
+          <span className="font-bold text-2xl text-[#F29829]">01.</span>
           <h1 className="text-2xl uppercase">
             Solicitud de la denom inación y razón social
           </h1>
@@ -33,13 +33,13 @@ function Tema1() {
           &nbsp;Para obtener permiso de utilizar un nombre para una empresa.
         </p>
         <div className="flex gap-4 items-center mb-4">
-          <span className="font-bold text-2xl text-[#CD512F]">02.</span>
+          <span className="font-bold text-2xl text-[#F29829]">02.</span>
           <h1 className="text-2xl uppercase">
             Elaboración de la asamblea de socios
           </h1>
         </div>
         <div className="flex gap-4 items-center mb-4">
-          <span className="font-bold text-2xl text-[#CD512F]">03.</span>
+          <span className="font-bold text-2xl text-[#F29829]">03.</span>
           <h1 className="text-2xl uppercase">
             Tramite en correduría o Notaria publica
           </h1>
@@ -47,7 +47,7 @@ function Tema1() {
         <p className="text-xl mb-4">&nbsp; Para validez legal de documentos</p>
 
         <div className="flex gap-4 items-center mb-4">
-          <span className="font-bold text-2xl text-[#CD512F]">04.</span>
+          <span className="font-bold text-2xl text-[#F29829]">04.</span>
           <h1 className="text-2xl uppercase">Firma Electrónica </h1>
         </div>
         <p className="text-xl mb-4">
@@ -56,31 +56,31 @@ function Tema1() {
         </p>
 
         <div className="flex gap-4 items-center mb-4">
-          <span className="font-bold text-2xl text-[#CD512F]">05.</span>
+          <span className="font-bold text-2xl text-[#F29829]">05.</span>
           <h1 className="text-2xl uppercase">
             Alta de la empresa física federal y física estatal
           </h1>
         </div>
         <div className="flex gap-4 items-center mb-4">
-          <span className="font-bold text-2xl text-[#CD512F]">06.</span>
+          <span className="font-bold text-2xl text-[#F29829]">06.</span>
           <h1 className="text-2xl uppercase">Apertura de cuenta bancaria.</h1>
         </div>
         <div className="flex gap-4 items-center mb-4">
-          <span className="font-bold text-2xl text-[#CD512F]">07.</span>
+          <span className="font-bold text-2xl text-[#F29829]">07.</span>
           <h1 className="text-2xl uppercase">
             Registro patronal ante el IMSS.
           </h1>
         </div>
         <div className="flex gap-4 items-center mb-4">
-          <span className="font-bold text-2xl text-[#CD512F]">08.</span>
+          <span className="font-bold text-2xl text-[#F29829]">08.</span>
           <h1 className="text-2xl uppercase">Alta ante el INFONAVIT.</h1>
         </div>
         <div className="flex gap-4 items-center mb-4">
-          <span className="font-bold text-2xl text-[#CD512F]">09.</span>
+          <span className="font-bold text-2xl text-[#F29829]">09.</span>
           <h1 className="text-2xl uppercase">Alta en FONACOT</h1>
         </div>
         <div className="flex gap-4 items-center mb-4">
-          <span className="font-bold text-2xl text-[#CD512F]">10.</span>
+          <span className="font-bold text-2xl text-[#F29829]">10.</span>
           <h1 className="text-2xl uppercase">Obtención de folio del REPSE.</h1>
         </div>
       </div>

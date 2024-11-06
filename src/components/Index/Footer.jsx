@@ -16,8 +16,8 @@ function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-2 py-8 mb-12">
         {URL === "/" && (
           <div className="flex justify-between flex-col md:flex-row items-start md:items-center">
-            <h1 className="text-6xl uppercase mb-4 md:mb-0"> Consultoría?</h1>
-            <div className="h-36 w-36 hover:bg-[#CD512F] border group">
+            <h1 className="text-6xl uppercase mb-4 md:mb-0">¿Consultoría?</h1>
+            <div className="h-36 w-36 hover:bg-[#F29829] border group">
               <div className="flex justify-end items-end px-4">
                 {" "}
                 <svg
@@ -47,7 +47,7 @@ function Footer() {
         <div></div>
       </div>
       {URL === "/" && (
-        <div className="flex  md:justify-between flex-col md:flex-row md:items-center py-12 border-t border-b border-gray-500">
+        <div className="flex  md:justify-between flex-col md:flex-row md:items-center py-12 border-t border-b border-gray-700">
           <div>
             <ul className="flex md:flex-row flex-col gap-4 mb-8 md:mb-0">
               {links.map((item, index) => (
@@ -57,7 +57,7 @@ function Footer() {
                   key={index}
                   className="mx-2"
                 >
-                  <p className="uppercase text-base cursor-pointer hover:text-[#CD512F]">
+                  <p className="uppercase text-base cursor-pointer hover:text-[#F29829]">
                     {item.title}
                   </p>
                 </a>
@@ -83,13 +83,13 @@ function Footer() {
             title="Ecommetrica"
             target="_blank"
             rel="noreferrer"
-            className="group relative hover:text-[#CD512F] text-white 
+            className="group relative hover:text-[#F29829] text-white 
       transition-colors duration-300 ease-in-out"
           >
             Ecommetrica
             <span
               className="
-        block absolute left-0 bottom-0 w-full h-[2px] bg-[#CD512F] 
+        block absolute left-0 bottom-0 w-full h-[2px] bg-[#F29829] 
         scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 ease-in-out
         "
             ></span>

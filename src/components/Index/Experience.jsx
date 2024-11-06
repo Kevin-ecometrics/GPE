@@ -2,7 +2,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
-
+import Tower from "@components/Index/Tower";
 function Experience() {
   const yearExperience = [
     { number: 6, text: "Años de experiencia" },
@@ -75,27 +75,40 @@ function Experience() {
       }
     }, [inView, to]);
 
-    return <span>{count}</span>;
+    return (
+      <span
+        style={{
+          maskImage: "linear-gradient(to bottom, black 65%, transparent 20%)",
+        }}
+      >
+        {count}
+      </span>
+    );
   };
 
   return (
-    <div className="flex md:flex-row flex-col py-8 justify-between items-center md:w-[80%] mx-auto">
-      {yearExperience.map((item, index) => (
-        <motion.div
-          ref={refs.current[index]}
-          key={index}
-          className="flex flex-col items-center"
-          initial={{ opacity: 0, y: 50 }}
-          animate={inView[index] ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-          transition={{ duration: 0.5 }}
-        >
-          <h3 className="text-[70px] uppercase mb-8 mt-2 text-[#D2D2D0] group-hover:text-[#CD512F]">
-            <Counter from={0} to={item.number} />
-            <span className="text-[#CD512F] text-8xl">+</span>
-          </h3>
-          <h4 className="text-[34px] mt-1 uppercase">{item.text}</h4>
-        </motion.div>
-      ))}
+    <div className="grid grid-cols-1 md:grid-cols-2 justify-between items-center py-28 md:w-[80%] mx-auto">
+      <div>
+        {yearExperience.map((item, index) => (
+          <motion.div
+            ref={refs.current[index]}
+            key={index}
+            className="flex flex-col items-center"
+            initial={{ opacity: 0, y: 50 }}
+            animate={
+              inView[index] ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }
+            }
+            transition={{ duration: 0.5 }}
+          >
+            <h3 className="text-[70px] uppercase mb-2 mt-2 text-[#D2D2D0] group-hover:text-[#F29829]">
+              <Counter from={0} to={item.number} />
+              <span className="text-[#F29829]">+</span>
+            </h3>
+            <h4 className="text-[34px] uppercase">{item.text}</h4>
+          </motion.div>
+        ))}
+      </div>
+      <Tower />
     </div>
   );
 }

@@ -19,7 +19,7 @@ function Hero() {
   ];
 
   return (
-    <div className="md:h-screen uppercase flex justify-center items-center flex-col py-64 md:py-0">
+    <div className=" uppercase flex justify-center items-center flex-col py-32 md:py-16">
       <div className="flex">
         <a href="/">
           <p className="hover:text-white">Inicio </p>
@@ -27,7 +27,7 @@ function Hero() {
         &nbsp;
         <p>/</p>
         &nbsp;
-        <p className="text-[#CD512F]">Contacto</p>
+        <p className="text-[#F29829]">Contacto</p>
       </div>
       <Observer>
         <h1 className="text-7xl py-8 text-center mb-16">
@@ -40,7 +40,7 @@ function Hero() {
               {char === " " ? "\u00A0" : char}
             </motion.span>
           ))}
-          <span className="text-[#CD512F] ml-2">OPORTUNIDADES</span>
+          <span className="text-[#F29829] ml-2">OPORTUNIDADES</span>
         </h1>
       </Observer>
       <Observer>
@@ -58,7 +58,7 @@ function Hero() {
                   rest: { opacity: 1 },
                   hover: { opacity: 0.7 },
                 }}
-                className="relative hover:text-[#CD512F]"
+                className="relative hover:text-[#F29829]"
               >
                 <img src={item.src} alt={item.title} className="mx-auto mb-8" />
                 <h3 className="text-[24px]  mb-4 mt-2 ">{item.title}</h3>

@@ -5,31 +5,31 @@ const data = [
     imgSrc: "/1.webp",
     title: "Logística corporativa",
     description:
-      "Our team consists of experienced professionals who work with passion, delivering high-quality projects.",
+      "Ayudamos a nuestros clientes a iniciar o continuar con las funciones de su empresa con los tramites y acompañamientos permitentes.",
   },
   {
     imgSrc: "/2.webp",
     title: "Administración de nómina",
     description:
-      "We offer unique and creative approaches that help your business stand out in the market and achieve success.",
+      "Brindamos soluciones en administración y realización de pagos a colaboradores a sí mismo en la apertura de registros patronales.",
   },
   {
     imgSrc: "/3.webp",
     title: "Asesoría contable",
     description:
-      "We prioritize client needs, deeply understanding them to create tailored solutions for maximum results.",
+      "Proporcionamos asesoramiento para el manejo, control y cuidado de las obligaciones fiscales y administrativas de cada uno de nuestros clientes.",
   },
   {
     imgSrc: "/4.webp",
     title: "Asesoría laboral individual",
     description:
-      "Our team consists of experienced professionals who work with passion, delivering high-quality projects.",
+      "Apoyamos a formalizar negocios mediante asesorías para el cumplimiento de obligaciones fiscales y administrativas.",
   },
 ];
 
 function Client() {
   return (
-    <div className="flex md:flex-row flex-col justify-between items-center md:w-[80%] mx-auto md:mb-24">
+    <div className="flex md:flex-row flex-col justify-between items-center md:w-[80%] mx-auto md:mb-32">
       {data.map((item, index) => (
         <motion.div
           key={index}
@@ -43,7 +43,7 @@ function Client() {
               rest: { opacity: 1 },
               hover: { opacity: 0.7 },
             }}
-            className="relative hover:text-[#CD512F]"
+            className="relative hover:text-[#F29829]"
           >
             <img
               src={item.imgSrc}

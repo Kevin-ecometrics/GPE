@@ -14,6 +14,8 @@ import Sponsors from "@components/Index/Sponsors";
 import Blog from "@components/Index/Blog";
 import NewsLetter from "@components/Index/NewsLetter";
 import Loader from "@components/Animation/Loader";
+import { motion, AnimatePresence } from "framer-motion";
+import ScrollProgress from "@components/Index/ScrollProgress";
 
 function Index() {
   const [isLoading, setIsLoading] = useState(true);
@@ -30,26 +32,31 @@ function Index() {
     return <Loader />;
   }
   return (
-    <div className="overflow-x-hidden">
-      <Header />
-      <ContainerLayout>
-        <Hero />
-        <Client />
-        <Service />
-        <Experience />
-      </ContainerLayout>
-      <Contact />
-      <ContainerLayout>
-        <About />
-      </ContainerLayout>
-      <Team />
-      <ContainerLayout>
-        <Reviews />
-        <Sponsors />
-      </ContainerLayout>
-      <Blog />
-      <NewsLetter />
-      <Footer />
+    <div>
+      <ScrollProgress />
+      <AnimatePresence mode="popLayout">
+        <motion.div>
+          <Header />
+          <ContainerLayout>
+            <Hero />
+            <Client />
+            <Service />
+            <Experience />
+          </ContainerLayout>
+          <Contact />
+          <ContainerLayout>
+            <About />
+          </ContainerLayout>
+          <Team />
+          <ContainerLayout>
+            <Reviews />
+            <Sponsors />
+          </ContainerLayout>
+          <Blog />
+          <NewsLetter />
+          <Footer />
+        </motion.div>
+      </AnimatePresence>
     </div>
   );
 }

@@ -1,14 +1,24 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
+import { subscribeToNewsletter } from "@routes/api";
 
 function NewsLetter() {
-  // Función que renderiza el texto con animación
-
   const [email, setEmail] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(email);
+    try {
+      const res = await subscribeToNewsletter(email);
+      toast.success(res.data.message);
+      setEmail("");
+    } catch (error) {
+      if (error.response && error.response.status === 400) {
+        toast.error(error.response.data.message);
+      } else {
+        console.error("Error en el servidor");
+      }
+    }
   };
 
   const renderText = (text) => {
@@ -29,36 +39,37 @@ function NewsLetter() {
         <div>
           <video
             src="/video.mp4"
-            className="w-screen md:h-[800px] object-cover"
+            className="w-screen md:h-[900px] object-cover"
             autoPlay
             loop
             muted
             playsInline
           ></video>
         </div>
-        <div className="flex justify-center items-start px-4 md:px-16 flex-col">
-          <p className="text-xl uppercase md:mb-16 py-8 md:py-0">Newsletter</p>
-          <h1 className="text-4xl md:text-6xl uppercase mb-4">
+        <div className="flex justify-center items-start px-4 md:px-16 flex-col bg-[#181817]">
+          <p className="text-lg uppercase md:mb-16 py-8 md:py-0">Newsletter</p>
+          {/* <h1 className="text-4xl md:text-6xl uppercase mb-4">
             {renderText("Suscríbete a nuestra ")}
-            <span className="text-[#CD512F]">gaceta</span>
-          </h1>
+            <span className="text-[#F29829]">gaceta</span>
+          </h1> */}
           <h2 className="text-4xl md:text-6xl uppercase mb-16">
             {renderText("Recibe ")}
-            <span className="text-[#CD512F]">información</span>{" "}
-            {renderText("valiosa a tu ")}
-            <span className="text-[#CD512F]">bandeja</span>
+            <span className="text-[#F29829]">información</span>{" "}
+            {renderText("valiosa a tu")}
+            <span className="text-[#F29829]">bandeja </span>
           </h2>
           <form onSubmit={handleSubmit} className="relative">
             <input
               type="email"
+              value={email}
               name="email"
               onChange={(e) => setEmail(e.target.value)}
-              className="w-80 bg-black border border-white rounded-full p-6 text-white"
+              className="w-[600px] bg-black border border-white rounded-full p-6 text-white"
               placeholder="Enter Your Email"
             />
             <button
               type="submit"
-              className="bg-[#CD512F] hover:bg-white hover:text-orange-600 transition-transform 
+              className="bg-[#F29829] hover:bg-white hover:text-orange-600 transition-transform 
             duration-300 ease-in-out
           text-white rounded-full p-4 absolute right-2  top-2 "
             >
@@ -77,11 +88,12 @@ function NewsLetter() {
                 <path d="M13 6l6 6" />
               </svg>
             </button>
+            <Toaster position="top-right" />
           </form>
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 px-4 md:px-0">
-        <div className="bg-[#CD512F] ml-[28%] h-32 hidden md:block"></div>
+        <div className="bg-[#F29829] ml-[28%] h-32 hidden md:block"></div>
         <div>
           <p className="text-start py-4 md:p-8 md:w-[80%]">
             Al suscribirte a nuestra lista de correo, siempre estarás

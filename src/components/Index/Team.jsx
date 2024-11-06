@@ -8,12 +8,11 @@ function Team() {
         <Observer>
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
             <h1 className="text-4xl px-8 md:px-0 md:text-6xl uppercase">
-              Conoce al <span className="text-[#CD512F]">equipo</span> detrás de
-              GPE Consultores
+              Conoce al <span className="text-[#F29829]">equipo</span>
             </h1>
 
             <a href="/team" className="px-8 py-4 md:px-0 md:py-0">
-              <button className="bg-[#CD512F] hover:contrast-75 text-white px-4 py-2 rounded-md">
+              <button className="bg-[#F29829] hover:contrast-75 text-white px-4 py-2 rounded-md">
                 Ver más
               </button>
             </a>
