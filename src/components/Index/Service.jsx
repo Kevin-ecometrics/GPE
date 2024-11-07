@@ -76,7 +76,7 @@ function Service() {
         transition={{ duration: 1 }}
         initial={{ opacity: 0, y: 50 }}
         key={index}
-        className="flex md:flex-row flex-col justify-between items-start border-b border-gray-800 group md:px-0 px-8 scroll-mt-48"
+        className="flex md:flex-row flex-col justify-between items-start border-b border-gray-800 group md:px-0 px-8 scroll-mt-96"
       >
         <div className="mb-12">
           <h3 className="text-[32px] uppercase mb-8 mt-2 text-[#D2D2D0] group-hover:text-[#F29829]">
@@ -84,7 +84,7 @@ function Service() {
           </h3>
           <div className="flex gap-8">
             <div className="border w-0 bg-[#F29829] border-[#F29829]"></div>
-            <p className="text-[16px] mt-1 text-[#D2D2D099]">
+            <p className="text-[16px] md:w-[90%] mt-1 text-[#D2D2D099]">
               {service.description}
             </p>
           </div>
@@ -121,12 +121,12 @@ function Service() {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
-      className="md:h-screen"
+      className="md:h-screen mb-24"
     >
       <p className="text-[23px] text-[#D2D2D099] mb-12 text-center md:text-start">
         Nuestros servicios
       </p>
-      <div className="flex justify-start items-center mb-12">
+      <div className="flex justify-start items-center mb-16">
         <AnimatePresence mode="popLayout">
           <motion.h1
             key={currentIndex}
@@ -134,7 +134,7 @@ function Service() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 50 }}
             transition={{ duration: 0.8 }}
-            className="text-[#D2D2D0] md:text-start text-center text-[56px] uppercase"
+            className="text-[#D2D2D0] md:text-start text-center text-[30px] md:text-[56px] uppercase"
           >
             {renderTitle(titleServices[currentIndex], currentIndex)}
           </motion.h1>

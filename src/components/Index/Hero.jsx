@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 const Hero = () => {
-  const words = ["Grupo", "de", "planeación", "empresarial"];
+  const words = ["Grupo", "de", "Planeación", "Empresarial"];
   const [mouseX, setMouseX] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -25,7 +25,7 @@ const Hero = () => {
       className="md:py-4 flex md:flex-row flex-col justify-center items-center"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 w-screen px-8 md:px-0 ">
-        <div className="md:hidden block">
+        <div className="md:hidden block mt-20">
           <img src="/gpeHero2.png" alt="hero element" title="hero element" />
         </div>
         <div className="flex justify-center  items-center md:items-start flex-col ">
@@ -35,10 +35,12 @@ const Hero = () => {
                 {word.split("").map((letter, letterIndex) => (
                   <motion.span
                     key={letterIndex}
-                    className={`text-[80px] md:text-[112px] ${
-                      word === "de" ? "text-[#F29829]" : "text-[#D2D2D0]"
+                    className={`text-[60px] md:text-[112px] ${
+                      ["G", "P", "E"].includes(letter)
+                        ? "text-[#F29829]"
+                        : "text-[#D2D2D0]"
                     } uppercase`}
-                    whileHover={word !== "de" ? { scale: 1.2 } : {}}
+                    whileHover={word !== "" ? { scale: 1.2 } : {}}
                   >
                     {letter}
                   </motion.span>

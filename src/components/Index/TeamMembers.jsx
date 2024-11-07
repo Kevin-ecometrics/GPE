@@ -24,7 +24,7 @@ function TeamMembers() {
                 <p className="text-white uppercase text-xl transform translate-y-96 group-hover:translate-y-32 transition-transform duration-500 mb-4">
                   {member.name}
                 </p>
-                <p className="text-[#F29829] font-bold text-xl transform translate-y-96 group-hover:translate-y-32 transition-transform duration-500 uppercase">
+                <p className="text-white font-bold text-xl transform translate-y-96 group-hover:translate-y-32 transition-transform duration-500 uppercase">
                   {member.job}
                 </p>
               </div>

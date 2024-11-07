@@ -6,7 +6,7 @@ import PoliticasDePrivacidad from "@components/Modal/Privacy";
 import TerminosYCondiciones from "@components/Modal/Terms";
 import SiteMap from "@components/Modal/SiteMap";
 import { motion, AnimatePresence } from "framer-motion";
-import Logo from "/logo.svg";
+import Logo from "/logo.webp";
 function Header() {
   const list = [
     { name: "Servicios", link: "#services" },
@@ -138,20 +138,35 @@ function Header() {
     >
       {" "}
       <Modal isOpen={modalIsOpen} content={modalContent} onClose={closeModal} />
-      <div className="container mx-auto flex justify-between items-center py-4 px-8 h-[140px]">
-        <a href="/home" title="Home">
-          <img
-            src={Logo}
-            className="w-12 h-12"
-            alt="Logo GPE"
-            title="Logo GPE"
-          />
-        </a>
+      <div className="container mx-auto flex justify-between items-center py-4 px-16 h-[140px]">
+        <div className="flex gap-4 items-center">
+          <a href="/home" title="Home">
+            <img
+              src={Logo}
+              className="w-12 h-12"
+              alt="Logo GPE"
+              title="Logo GPE"
+            />
+          </a>
+          <AnimatePresence mode="popLayout">
+            {isScrolled && (
+              <motion.p
+                className="text-white font-bold ml-2 md:block hidden"
+                initial={{ opacity: 0, scaleX: 0, originX: 0 }}
+                animate={{ opacity: 1, scaleX: 1 }}
+                exit={{ opacity: 0, scaleX: 0 }}
+                transition={{ duration: 0.5, ease: "easeInOut" }}
+              >
+                GPE CONSULTORES
+              </motion.p>
+            )}
+          </AnimatePresence>
+        </div>
 
         {menu
           ? null
           : (urlMain === "/home" || urlMain === "/") && (
-              <ul className="md:flex hidden z-30">
+              <ul className="md:flex hidden relative z-30">
                 {list.map((item, index) => (
                   <a
                     href={item.link}
@@ -160,10 +175,10 @@ function Header() {
                     key={index}
                   >
                     <p
-                      className={`mx-4 uppercase cursor-pointer font-bold ${
+                      className={`mx-4 uppercase text-white cursor-pointer font-bold ${
                         activeLink === item.link
                           ? "text-white"
-                          : "hover:text-white"
+                          : "hover:text-[#F29829]"
                       }`}
                     >
                       {item.name}

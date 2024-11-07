@@ -37,14 +37,17 @@ function Reviews() {
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
+  const [direction, setDirection] = useState(0);
 
   const handlePrev = () => {
+    setDirection(-1);
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? reviews.length - 1 : prevIndex - 1
     );
   };
 
   const handleNext = () => {
+    setDirection(1);
     setCurrentIndex((prevIndex) =>
       prevIndex === reviews.length - 1 ? 0 : prevIndex + 1
     );
@@ -72,11 +75,11 @@ function Reviews() {
 
   return (
     <div
-      className="flex overflow-x-hidden justify-center items-center py-16 flex-col px-8 md:px-0 scroll-mt-16"
+      className="flex overflow-x-hidden justify-center items-center py-16 flex-col"
       id="reviews"
     >
       <p className="text-lg uppercase mb-12">Reseñas</p>
-      <h2 className="text-4xl md:text-6xl mb-16 uppercase">
+      <h2 className="text-4xl md:text-6xl mb-16 text-center uppercase">
         Lo que nuestro <span className="text-[#F29829]">trabajo</span> dice, la{" "}
         {""}
         <span className="text-[#F29829]">voz</span> de nuestros{" "}
@@ -102,11 +105,11 @@ function Reviews() {
             <path d="M5 12l6 -6" />
           </svg>
         </div>
-        <div className="w-72 mb-8 md:mb-0 md:w-96 h-96 flex justify-center items-center overflow-hidden relative">
-          <AnimatePresence initial={false} custom={currentIndex}>
+        <div className="w-64 mb-8 md:mb-0 md:w-96 h-96 flex justify-center items-center overflow-hidden relative">
+          <AnimatePresence initial={false} custom={direction}>
             <motion.div
               key={currentIndex}
-              custom={currentIndex}
+              custom={direction}
               variants={variants}
               initial="enter"
               animate="center"
@@ -123,8 +126,10 @@ function Reviews() {
                 setIsDragging(false);
                 const swipe = swipePower(offset.x, velocity.x);
                 if (swipe < -swipeConfidenceThreshold) {
+                  setDirection(1);
                   handleNext();
                 } else if (swipe > swipeConfidenceThreshold) {
+                  setDirection(-1);
                   handlePrev();
                 }
               }}

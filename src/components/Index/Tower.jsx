@@ -115,7 +115,7 @@ const SvgComponent = () => {
                   }
             }
             transition={{
-              delay: index * 0.2,
+              delay: index * 0.3,
               duration: 0.4,
               ease: "easeInOut",
             }}

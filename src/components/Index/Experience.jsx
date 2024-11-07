@@ -87,28 +87,33 @@ function Experience() {
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 justify-between items-center py-28 md:w-[80%] mx-auto">
-      <div>
-        {yearExperience.map((item, index) => (
-          <motion.div
-            ref={refs.current[index]}
-            key={index}
-            className="flex flex-col items-center"
-            initial={{ opacity: 0, y: 50 }}
-            animate={
-              inView[index] ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }
-            }
-            transition={{ duration: 0.5 }}
-          >
-            <h3 className="text-[70px] uppercase mb-2 mt-2 text-[#D2D2D0] group-hover:text-[#F29829]">
-              <Counter from={0} to={item.number} />
-              <span className="text-[#F29829]">+</span>
-            </h3>
-            <h4 className="text-[34px] uppercase">{item.text}</h4>
-          </motion.div>
-        ))}
+    <div className="md:h-screen md:py-44">
+      <p className="text-[23px] text-[#D2D2D099] mb-12 text-center md:text-start">
+        Conoce nuestra experiencia
+      </p>
+      <div className="grid grid-cols-1 md:grid-cols-2 justify-between   items-center md:w-[80%] mx-auto">
+        <div>
+          {yearExperience.map((item, index) => (
+            <motion.div
+              ref={refs.current[index]}
+              key={index}
+              className="flex flex-col items-center"
+              initial={{ opacity: 0, y: 50 }}
+              animate={
+                inView[index] ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }
+              }
+              transition={{ duration: 0.5 }}
+            >
+              <h3 className="text-[70px] uppercase mb-2 mt-2 text-[#D2D2D0] group-hover:text-[#F29829]">
+                <Counter from={0} to={item.number} />
+                <span className="text-[#F29829]">+</span>
+              </h3>
+              <h4 className="text-[40px] uppercase">{item.text}</h4>
+            </motion.div>
+          ))}
+        </div>
+        <Tower />
       </div>
-      <Tower />
     </div>
   );
 }

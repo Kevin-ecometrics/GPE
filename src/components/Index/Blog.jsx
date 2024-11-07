@@ -2,7 +2,7 @@ import blogs from "@components/Index/ListBlogs";
 
 function Blog() {
   return (
-    <div className="scroll-mt-16 " id="blog">
+    <div className="scroll-mt-48 " id="blog">
       <div className="md:container mx-auto px-8 md:px-0">
         <p className="uppercase text-lg mb-8">GACETA</p>
         <div className="flex justify-between items-start md:items-end mb-8 md:flex-row flex-col">
@@ -10,7 +10,7 @@ function Blog() {
             GACETA en materia <span className="text-[#F29829]">fiscal</span> y{" "}
             <span className="text-[#F29829]">laboral</span>
           </h1>
-          <div className="flex gap-2 group py-4 md:py-0">
+          <div className="flex gap-2 group py-4 md:py-0 px-4">
             <a href="/blogs" title="Blogs">
               <p className="uppercase group relative inline-block">
                 Mira todos nuestras publicaciones
@@ -36,7 +36,7 @@ function Blog() {
             </a>
           </div>
         </div>
-        <div className="flex gap-16 overflow-x-hidden flex-col md:flex-row">
+        <div className="flex gap-16 overflow-x-hidden flex-col md:flex-row md:px-4">
           {blogs.slice(0, 2).map((blog, index) => (
             <div
               className=" overflow-hidden md:w-[50%] relative group"

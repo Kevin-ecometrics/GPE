@@ -12,9 +12,9 @@ function Hero() {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center py-8 md:py-16 uppercase">
+    <div className="flex flex-col justify-center items-center py-32 uppercase">
       <div className="flex mb-16">
-        <a href="/">
+        <a href="/home">
           <p className=" hover:text-white cursor-pointer">Inicio /</p>
         </a>{" "}
         &nbsp;
@@ -23,7 +23,7 @@ function Hero() {
         </p>
       </div>
 
-      <h1 className="uppercase text-7xl px-8 mb-16">
+      <h1 className="uppercase text-4xl md:text-7xl px-8 mb-16">
         Mira nuestro equipo de GPE
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

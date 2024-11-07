@@ -13,22 +13,24 @@ function Sponsors() {
     ) {
       return (
         <span key={index} className="text-[#F29829]">
-          {word}{" "}
+          {word}&nbsp;
         </span>
       );
     } else {
-      return word
-        .split("")
-        .map((char, charIndex) => (
-          <motion.span
-            key={`${index}-${charIndex}`}
-            whileHover={{ scale: 1.2 }}
-            className="inline-block"
-          >
-            {char}
-          </motion.span>
-        ))
-        .concat(" ");
+      return (
+        <span key={index} className="inline-block">
+          {word.split("").map((char, charIndex) => (
+            <motion.span
+              key={`${index}-${charIndex}`}
+              whileHover={{ scale: 1.2 }}
+              className="inline-block"
+            >
+              {char}
+            </motion.span>
+          ))}
+          &nbsp;
+        </span>
+      );
     }
   });
 
@@ -50,7 +52,7 @@ function Sponsors() {
         </Observer>
 
         <Observer>
-          <h2 className="text-3xl md:text-5xl text-start  md:text-center uppercase space-y-4 px-8 md:px-1">
+          <h2 className="text-2xl md:text-5xl text-center uppercase space-y-4 md:px-1">
             {words}
           </h2>
         </Observer>

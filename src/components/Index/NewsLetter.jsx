@@ -33,6 +33,14 @@ function NewsLetter() {
     ));
   };
 
+  const renderWords = (text) => {
+    return text.split(" ").map((word, index) => (
+      <span key={index} className="inline-block">
+        {renderText(word + " ")}
+      </span>
+    ));
+  };
+
   return (
     <div>
       <div className="grid grid-cols-1 md:grid-cols-2 md:mt-16">
@@ -52,11 +60,13 @@ function NewsLetter() {
             {renderText("Suscríbete a nuestra ")}
             <span className="text-[#F29829]">gaceta</span>
           </h1> */}
-          <h2 className="text-4xl md:text-6xl uppercase mb-16">
-            {renderText("Recibe ")}
-            <span className="text-[#F29829]">información</span>{" "}
-            {renderText("valiosa a tu")}
-            <span className="text-[#F29829]">bandeja </span>
+          <h2 className="text-4xl md:text-6xl uppercase mb-16 md:w-[80%]">
+            {renderWords("Recibe")}
+            <span className="text-[#F29829] inline-block">
+              información&nbsp;
+            </span>
+            {renderWords("valiosa a tu")}
+            <span className="text-[#F29829] inline-block">bandeja</span>
           </h2>
           <form onSubmit={handleSubmit} className="relative">
             <input
@@ -64,7 +74,7 @@ function NewsLetter() {
               value={email}
               name="email"
               onChange={(e) => setEmail(e.target.value)}
-              className="w-[600px] bg-black border border-white rounded-full p-6 text-white"
+              className="md:w-[500px] bg-black border border-black rounded-full p-6 text-white mb-8 md:mb-0"
               placeholder="Enter Your Email"
             />
             <button
