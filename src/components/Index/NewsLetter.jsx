@@ -75,7 +75,7 @@ function NewsLetter() {
               name="email"
               onChange={(e) => setEmail(e.target.value)}
               className="md:w-[500px] bg-black border border-black rounded-full p-6 text-white mb-8 md:mb-0"
-              placeholder="Enter Your Email"
+              placeholder="Ingresa tu correo"
             />
             <button
               type="submit"

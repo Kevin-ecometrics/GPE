@@ -36,14 +36,14 @@ function Sponsors() {
 
   return (
     <div className="mb-8 py-16">
-      <Observer>
+      {/* <Observer>
         <div className="flex md:flex-row flex-col gap-8 md:gap-0 justify-between items-center px-8 md:px-0 md:w-[80%] mx-auto mb-16">
           <img src="/1.webp" alt="partner" title="partner" />
           <img src="/2.webp" alt="partner" title="partner" />
           <img src="/3.webp" alt="partner" title="partner" />
           <img src="/4.webp" alt="partner" title="partner" />
         </div>
-      </Observer>
+      </Observer> */}
       <div>
         <Observer>
           <p className="text-center mb-8 uppercase text-xl">

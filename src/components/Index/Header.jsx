@@ -6,13 +6,16 @@ import PoliticasDePrivacidad from "@components/Modal/Privacy";
 import TerminosYCondiciones from "@components/Modal/Terms";
 import SiteMap from "@components/Modal/SiteMap";
 import { motion, AnimatePresence } from "framer-motion";
+import { FaFacebook } from "react-icons/fa";
+import { SiGooglemaps } from "react-icons/si";
+
 import Logo from "/logo.webp";
 function Header() {
   const list = [
     { name: "Servicios", link: "#services" },
     { name: "Equipo", link: "#team" },
     { name: "Reseñas", link: "#reviews" },
-    { name: "Blog", link: "#blog" },
+    // { name: "Blog", link: "#blog" },
   ];
 
   const listService = [
@@ -138,7 +141,7 @@ function Header() {
     >
       {" "}
       <Modal isOpen={modalIsOpen} content={modalContent} onClose={closeModal} />
-      <div className="container mx-auto flex justify-between items-center py-4 px-16 h-[140px]">
+      <div className="container mx-auto flex justify-between items-center py-4  h-[140px]">
         <div className="flex gap-4 items-center">
           <a href="/home" title="Home">
             <img
@@ -192,8 +195,8 @@ function Header() {
           <a href="/contact" title="contacto">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="42"
-              height="42"
+              width="32"
+              height="32"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -208,8 +211,8 @@ function Header() {
           {menu ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="42"
-              height="42"
+              width="32"
+              height="32"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -224,8 +227,8 @@ function Header() {
           ) : (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="42"
-              height="42"
+              width="32"
+              height="32"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -284,34 +287,122 @@ function Header() {
               )}
               {urlMain === "/contact" && (
                 <div className="flex flex-col gap-4">
-                  <p className="text-2xl uppercase">Contacto</p>
-                  <p className="text-lg">Tel: 55 1234 5678</p>
-                  <p className="text-lg">Email: </p>
-                  <p className="text-lg">Direccion: </p>
+                  <p className="text-2xl uppercase text-white">
+                    Información de contacto
+                  </p>{" "}
+                  <a href="tel:6646085340" className="text-lg hover:text-white">
+                    <p className="text-lg hover:text-white">
+                      Tel: 664 608 53 40
+                    </p>
+                  </a>
+                  <a
+                    href="mailto:legal@gpeconsultores.com.mx"
+                    className="text-lg hover:text-white"
+                  >
+                    <p className="text-lg hover:text-white">
+                      Email: legal@gpeconsultores.com.mx{" "}
+                    </p>
+                  </a>
+                  <a
+                    href="https://maps.app.goo.gl/QC4jvxeinQf2kvfd6"
+                    target="_blank"
+                    className="cursor-pointer"
+                  >
+                    <p className="text-lg hover:text-white">
+                      Direccion: Blvd. Gustavo Diaz Ordaz No. 12649 Local 17G-B,
+                      El Paraiso, Tijuana, Baja California.{" "}
+                    </p>
+                  </a>
                 </div>
               )}
               {urlMain === "/blogs" && (
                 <div className="flex flex-col gap-4">
-                  <p className="text-2xl uppercase">Blogs</p>
-                  <p className="text-lg">Tel: 55 1234 5678</p>
-                  <p className="text-lg">Email: </p>
-                  <p className="text-lg">Direccion: </p>
+                  <p className="text-2xl uppercase text-white">
+                    Información de contacto
+                  </p>{" "}
+                  <a href="tel:6646085340" className="text-lg hover:text-white">
+                    <p className="text-lg hover:text-white">
+                      Tel: 664 608 53 40
+                    </p>
+                  </a>
+                  <a
+                    href="mailto:legal@gpeconsultores.com.mx"
+                    className="text-lg hover:text-white"
+                  >
+                    <p className="text-lg hover:text-white">
+                      Email: legal@gpeconsultores.com.mx{" "}
+                    </p>
+                  </a>
+                  <a
+                    href="https://maps.app.goo.gl/QC4jvxeinQf2kvfd6"
+                    target="_blank"
+                    className="cursor-pointer"
+                  >
+                    <p className="text-lg hover:text-white">
+                      Direccion: Blvd. Gustavo Diaz Ordaz No. 12649 Local 17G-B,
+                      El Paraiso, Tijuana, Baja California.{" "}
+                    </p>
+                  </a>
                 </div>
               )}
               {urlMain === "/blogs/" && (
                 <div className="flex flex-col gap-4">
-                  <p className="text-2xl uppercase">Blogs</p>
-                  <p className="text-lg">Tel: 55 1234 5678</p>
-                  <p className="text-lg">Email: </p>
-                  <p className="text-lg">Direccion: </p>
+                  <p className="text-2xl uppercase text-white">
+                    Información de contacto
+                  </p>{" "}
+                  <a href="tel:6646085340" className="text-lg hover:text-white">
+                    <p className="text-lg hover:text-white">
+                      Tel: 664 608 53 40
+                    </p>
+                  </a>
+                  <a
+                    href="mailto:legal@gpeconsultores.com.mx"
+                    className="text-lg hover:text-white"
+                  >
+                    <p className="text-lg hover:text-white">
+                      Email: legal@gpeconsultores.com.mx{" "}
+                    </p>
+                  </a>
+                  <a
+                    href="https://maps.app.goo.gl/QC4jvxeinQf2kvfd6"
+                    target="_blank"
+                    className="cursor-pointer"
+                  >
+                    <p className="text-lg hover:text-white">
+                      Direccion: Blvd. Gustavo Diaz Ordaz No. 12649 Local 17G-B,
+                      El Paraiso, Tijuana, Baja California.{" "}
+                    </p>
+                  </a>
                 </div>
               )}
               {urlMain === "/team" && (
                 <div className="flex flex-col gap-4">
-                  <p className="text-2xl uppercase">Equipo</p>
-                  <p className="text-lg">Tel: 55 1234 5678</p>
-                  <p className="text-lg">Email: </p>
-                  <p className="text-lg">Direccion: </p>
+                  <p className="text-2xl uppercase text-white">
+                    Información de contacto
+                  </p>{" "}
+                  <a href="tel:6646085340" className="text-lg hover:text-white">
+                    <p className="text-lg hover:text-white">
+                      Tel: 664 608 53 40
+                    </p>
+                  </a>
+                  <a
+                    href="mailto:legal@gpeconsultores.com.mx"
+                    className="text-lg hover:text-white"
+                  >
+                    <p className="text-lg hover:text-white">
+                      Email: legal@gpeconsultores.com.mx{" "}
+                    </p>
+                  </a>
+                  <a
+                    href="https://maps.app.goo.gl/QC4jvxeinQf2kvfd6"
+                    target="_blank"
+                    className="cursor-pointer"
+                  >
+                    <p className="text-lg hover:text-white">
+                      Direccion: Blvd. Gustavo Diaz Ordaz No. 12649 Local 17G-B,
+                      El Paraiso, Tijuana, Baja California.{" "}
+                    </p>
+                  </a>
                 </div>
               )}
               <p className="text-start absolute top-[870px]">
@@ -342,7 +433,7 @@ function Header() {
               </p>
 
               <div className="hidden md:block">
-                <h1 className="px-4 text-2xl hidden md:block uppercase py-4">
+                {/* <h1 className="px-4 text-2xl hidden md:block uppercase py-4">
                   Ultimos blogs
                 </h1>
                 <div className="flex gap-4 px-4">
@@ -362,14 +453,23 @@ function Header() {
                       </div>
                     </div>
                   ))}
-                </div>
+                </div> */}
                 <div className="border-t w-screen border-gray-700"></div>
                 <div className="flex gap-4 px-4 p-8 justify-end">
-                  <img src="" alt="logo" />
-                  <img src="" alt="logo" />
-                  <img src="" alt="logo" />
-                  <img src="" alt="logo" />
-                  <img src="" alt="logo" />
+                  <a
+                    href="https://www.facebook.com/GrupoPlaneacionEmpresarial"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaFacebook className="size-6 hover:text-[#F29829] ease-in-out" />
+                  </a>
+                  <a
+                    href="https://maps.app.goo.gl/VnijB55W1ALojLNX8"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <SiGooglemaps className="size-6 hover:text-[#F29829]" />
+                  </a>
                 </div>
               </div>
             </div>

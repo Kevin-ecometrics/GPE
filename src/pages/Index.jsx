@@ -52,7 +52,7 @@ function Index() {
             <Reviews />
             <Sponsors />
           </ContainerLayout>
-          <Blog />
+          {/* <Blog /> */}
           <NewsLetter />
           <Footer />
         </motion.div>

@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { FaFacebook } from "react-icons/fa";
+import { SiGooglemaps } from "react-icons/si";
 
 function Footer() {
   const links = [
@@ -6,7 +8,7 @@ function Footer() {
     { title: "Servicios", link: "#services" },
     { title: "Equipo", link: "#team" },
     { title: "Reseñas", link: "#reviews" },
-    { title: "Blog", link: "#blog" },
+    // { title: "Blog", link: "#blog" },
   ];
 
   const year = new Date().getFullYear();
@@ -77,12 +79,21 @@ function Footer() {
               ))}
             </ul>
           </div>
-          <div className="flex gap-4 px-2 md:px-4">
-            <img src="" alt="1" title="logo redsocial" />
-            <img src="" alt="2" title="logo redsocial" />
-            <img src="" alt="3" title="logo redsocial" />
-            <img src="" alt="4" title="logo redsocial" />
-            <img src="" alt="5" title="logo redsocial" />
+          <div className="flex gap-4 px-2 md:px-4 cursor-pointer">
+            <a
+              href="https://www.facebook.com/GrupoPlaneacionEmpresarial"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaFacebook className="size-6 hover:text-[#F29829] ease-in-out" />
+            </a>
+            <a
+              href="https://maps.app.goo.gl/VnijB55W1ALojLNX8"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <SiGooglemaps className="size-6 hover:text-[#F29829]" />
+            </a>
           </div>
         </div>
       )}

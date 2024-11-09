@@ -5,33 +5,33 @@ function Reviews() {
   const reviews = [
     {
       avatar: "/path/to/avatar1.jpg",
-      name: "John Doe",
-      position: "CEO",
-      text: "Review 1",
+      name: "Carlos Hernández",
+      position: "Director General",
+      text: "Excelente servicio y atención al cliente. Muy satisfecho con los resultados.",
     },
     {
       avatar: "/path/to/avatar2.jpg",
-      name: "Jane Smith",
-      position: "CTO",
-      text: "Review 2",
+      name: "María López",
+      position: "Gerente de Proyectos",
+      text: "El equipo es muy profesional y cumplió con todas nuestras expectativas.",
     },
     {
       avatar: "/path/to/avatar3.jpg",
-      name: "Alice Johnson",
-      position: "CFO",
-      text: "Review 3",
+      name: "Luis Martínez",
+      position: "Jefe de Tecnología",
+      text: "Gran experiencia trabajando con ellos. Altamente recomendados.",
     },
     {
       avatar: "/path/to/avatar4.jpg",
-      name: "Bob Brown",
-      position: "COO",
-      text: "Review 4",
+      name: "Ana Gómez",
+      position: "Directora de Marketing",
+      text: "La calidad del trabajo es excepcional. Definitivamente volveremos a contratar sus servicios.",
     },
     {
       avatar: "/path/to/avatar5.jpg",
-      name: "Charlie Davis",
-      position: "CMO",
-      text: "Review 5",
+      name: "Jorge Ramírez",
+      position: "Coordinador de Ventas",
+      text: "Muy profesionales y atentos a los detalles. Excelente colaboración.",
     },
   ];
 
@@ -159,11 +159,7 @@ function Reviews() {
               <h3 className="text-2xl mb-4">{reviews[currentIndex].name}</h3>
               <p className="text-lg mb-4">{reviews[currentIndex].position}</p>
               {/* <p className="mt-2">{reviews[currentIndex].text}</p> */}
-              <p className="text-xl text-white">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem
-                commodi molestias ratione obcaecati cumque sint animi eaque
-                ducimus fugit molestiae. Qui sint dignissimos maiores?
-              </p>
+              <p className="text-xl text-white">{reviews[currentIndex].text}</p>
             </motion.div>
           </AnimatePresence>
         </div>

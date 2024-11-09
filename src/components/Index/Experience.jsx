@@ -6,7 +6,7 @@ import Tower from "@components/Index/Tower";
 function Experience() {
   const yearExperience = [
     { number: 6, text: "Años de experiencia" },
-    { number: 50, text: "Proyectos completados" },
+    { number: 50, text: "Asesorias realizadas" },
     { number: 20, text: "Clientes satisfechos" },
   ];
 

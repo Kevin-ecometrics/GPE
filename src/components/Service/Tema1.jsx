@@ -4,19 +4,19 @@ function Tema1() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 px-8 gap-8">
       <div>
-        <p className="mb-8 text-xl md:text-3xl">
+        <p className="mb-8 text-xl md:text-xl">
           {" "}
           La logística corporativa permite evaluar, planificar y llevar control
           y llevar con éxito la eficiencia operativa, así como una estricta
           gestión de información y registros.
         </p>
-        <div className="flex gap-4 items-center mb-8">
+        {/* <div className="flex gap-4 items-center mb-8">
           <img src="" alt="Avatar" />
           <div>
             <p>Nombre:</p>
             <p>Puesto:</p>
           </div>
-        </div>
+        </div> */}
         <div>
           <Num />
         </div>

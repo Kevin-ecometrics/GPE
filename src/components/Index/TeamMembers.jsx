@@ -2,10 +2,10 @@ import Observer from "@components/Animation/Observer";
 
 function TeamMembers() {
   const teamMembers = [
-    { src: "/team2.webp", name: "John Doe", job: "Derecho Corporativo" },
-    { src: "/team1.webp", name: "Jane Smith", job: "Derecho Laboral" },
-    { src: "/team3.webp", name: "Alice Johnson", job: "Contaduría" },
-    { src: "/team4.webp", name: "Bob Brown", job: "Contaduría" },
+    { src: "/team1.webp", name: "Berenice Espinoza", job: "Derecho Laboral" },
+    { src: "/team2.webp", name: "Raul Garcia", job: "Derecho Corporativo" },
+    { src: "/team3.webp", name: "Isidro Garcia", job: "Contaduría" },
+    { src: "/team4.webp", name: "Adrian Perez", job: "Contaduría" },
   ];
 
   return (
@@ -21,10 +21,10 @@ function TeamMembers() {
                 className="w-full"
               />
               <div className="absolute inset-0 flex items-center justify-center bg-[#F29829] bg-opacity-20 opacity-0 flex-col group-hover:opacity-100 transition-opacity duration-300">
-                <p className="text-white uppercase text-xl transform translate-y-96 group-hover:translate-y-32 transition-transform duration-500 mb-4">
+                <p className="text-white uppercase text-xl transform translate-y-96 group-hover:translate-y-0 transition-transform duration-500 mb-4">
                   {member.name}
                 </p>
-                <p className="text-white font-bold text-xl transform translate-y-96 group-hover:translate-y-32 transition-transform duration-500 uppercase">
+                <p className="text-white font-bold text-xl transform translate-y-96 group-hover:translate-y-0 transition-transform duration-500 uppercase">
                   {member.job}
                 </p>
               </div>

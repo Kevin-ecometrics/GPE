@@ -3,20 +3,20 @@ function Tema2() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 px-8 gap-8">
       <div>
-        <p className="mb-8 text-xl md:text-3xl">
+        <p className="mb-8 text-xl md:text-xl">
           {" "}
           La Administración de nómina permite supervisar y hacer cumplir las
           obligaciones y derechos de los colaboradores en tiempo y forma para
           mantener la satisfacción laboral evitando rotaciones y fomentando un
           crecimiento continuo.
         </p>
-        <div className="flex gap-4 items-center">
+        {/* <div className="flex gap-4 items-center">
           <img src="" alt="Avatar" />
           <div>
             <p>Nombre:</p>
             <p>Puesto:</p>
           </div>
-        </div>{" "}
+        </div>{" "} */}
         <div>
           <Num />
         </div>
