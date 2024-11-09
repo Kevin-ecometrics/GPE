@@ -89,7 +89,7 @@ function Service() {
             </p>
           </div>
         </div>
-        <div className="bg-[#181817] group-hover:bg-[#F29829] ease-in-out transform transition-transform duration-300 flex flex-col py-4 px-8 ">
+        <div className="bg-[#181817] group-hover:bg-[#F29829] ease-in-out transform transition-transform duration-300 flex flex-col py-4 px-8 mb-6 md:mb-0 ">
           <a href={service.link} title={service.title}>
             <div className="flex justify-end items-end">
               <svg

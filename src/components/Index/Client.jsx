@@ -29,7 +29,7 @@ const data = [
 
 function Client() {
   return (
-    <div className="flex md:flex-row flex-col justify-between items-center md:w-[80%] mx-auto md:mb-32">
+    <div className="flex md:flex-row flex-col py-12 md:py-0 justify-between items-center md:w-[80%] mx-auto md:mb-32">
       {data.map((item, index) => (
         <motion.div
           key={index}
