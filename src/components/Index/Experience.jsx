@@ -87,11 +87,12 @@ function Experience() {
   };
 
   return (
-    <div className="md:h-screen md:py-44">
+    <div className="md:py-44">
       <p className="text-[23px] text-[#D2D2D099] mb-12 text-center md:text-start">
         Conoce nuestra experiencia
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 justify-between   items-center md:w-[80%] mx-auto">
+
+      <div className="grid grid-cols-1 px-8 lg:grid-cols-2">
         <div>
           {yearExperience.map((item, index) => (
             <motion.div
@@ -112,7 +113,10 @@ function Experience() {
             </motion.div>
           ))}
         </div>
-        <Tower />
+
+        <div>
+          <img src="/gpeHero2.png" alt="" />
+        </div>
       </div>
     </div>
   );

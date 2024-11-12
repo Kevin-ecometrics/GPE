@@ -2,7 +2,7 @@ import Observer from "@components/Animation/Observer";
 
 function Contact() {
   return (
-    <section>
+    <section id="contact" className="scroll-mt-32">
       <div className="grid md:grid-cols-2 grid-cols-1 bg-[#181817]">
         <div className="flex justify-center items-start flex-col md:w-[45%] md:px-0 px-8 mx-auto ">
           <Observer>

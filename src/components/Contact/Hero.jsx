@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 function Hero() {
   const text = "EXPLORA NUEVAS ";
   const images = [
-    { src: "/1contact.webp", title: "LLamanos", description: "+52663xxxxxx" },
+    { src: "/1contact.webp", title: "LLamanos", description: "+526646085340" },
     {
       src: "/2contact.webp",
       title: "Escribenos",
@@ -14,7 +14,7 @@ function Hero() {
       src: "/3contact.webp",
       title: "Visitanos",
       description:
-        "Boulevard Diaz Ordaz 12649-3D primer piso, El Paraiso, 22106 Tijuana, B.C.",
+        "Blvd. Gustavo Diaz Ordaz No. 12649 Local 17G-B, El Paraiso, Tijuana, Baja California.",
     },
   ];
 

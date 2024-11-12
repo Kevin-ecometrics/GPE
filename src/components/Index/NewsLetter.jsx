@@ -55,11 +55,7 @@ function NewsLetter() {
           ></video>
         </div>
         <div className="flex justify-center items-start px-4 md:px-16 flex-col bg-[#181817]">
-          <p className="text-lg uppercase md:mb-16 py-8 md:py-0">Newsletter</p>
-          {/* <h1 className="text-4xl md:text-6xl uppercase mb-4">
-            {renderText("Suscríbete a nuestra ")}
-            <span className="text-[#F29829]">gaceta</span>
-          </h1> */}
+          <p className="text-lg uppercase md:mb-16 py-8 md:py-0">GACETA</p>
           <h2 className="text-4xl md:text-6xl uppercase mb-16 md:w-[80%]">
             {renderWords("Recibe")}
             <span className="text-[#F29829] inline-block">

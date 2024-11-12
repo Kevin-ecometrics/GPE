@@ -13,6 +13,7 @@ import Logo from "/logo.webp";
 function Header() {
   const list = [
     { name: "Servicios", link: "#services" },
+    { name: "Contacto", link: "#contact" },
     { name: "Equipo", link: "#team" },
     { name: "Reseñas", link: "#reviews" },
     // { name: "Blog", link: "#blog" },
@@ -154,13 +155,13 @@ function Header() {
           <AnimatePresence mode="popLayout">
             {isScrolled && (
               <motion.p
-                className="text-white font-bold ml-2 md:block hidden"
+                className="text-white font-bold ml-2 md:block hidden hover:text-[#F29829] ease-out cursor-pointer "
                 initial={{ opacity: 0, scaleX: 0, originX: 0 }}
                 animate={{ opacity: 1, scaleX: 1 }}
                 exit={{ opacity: 0, scaleX: 0 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
               >
-                GPE CONSULTORES
+                <a href="/home">GPE CONSULTORES</a>
               </motion.p>
             )}
           </AnimatePresence>

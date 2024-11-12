@@ -16,6 +16,13 @@ function Service() {
   const id = pathname.split("/").pop();
   const [description, setDescription] = useState("");
 
+  const titlesWithAccents = {
+    "Logistica-corporativa": "Logística corporativa",
+    "Administracion-de-nomina": "Administración de nómina",
+    "Asesoria-contable": "Asesoría contable",
+    "Asesoria-laboral-individual": "Asesoría laboral individual",
+  };
+
   useEffect(() => {
     const index = list.indexOf(id);
     if (index === -1) {
@@ -25,11 +32,7 @@ function Service() {
     }
   }, [id]);
 
-  const formatText = (text) => {
-    return text.replace(/-/g, " ");
-  };
-
-  const formattedText = formatText(id);
+  const formattedText = titlesWithAccents[id] || id;
 
   return (
     <div className="overflow-x-hidden">

@@ -32,7 +32,7 @@ function Index() {
     return <Loader />;
   }
   return (
-    <div>
+    <>
       <ScrollProgress />
       <AnimatePresence mode="popLayout">
         <motion.div>
@@ -57,7 +57,7 @@ function Index() {
           <Footer />
         </motion.div>
       </AnimatePresence>
-    </div>
+    </>
   );
 }
 
