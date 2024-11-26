@@ -2,7 +2,7 @@ const list = [
   "Logistica-corporativa",
   "Administracion-de-nomina",
   "Asesoria-contable",
-  "Asesoria-laboral-individual",
+  "Representacion-y-Asesoria-legal",
 ];
 
 const text = [
@@ -48,10 +48,16 @@ const text = [
     <span className="text-[#F29829]">estados financieros mensuales</span>
   </>,
   <>
-    Brindamos orientación y asistencia en materia laboral desde la cultura de la prevención desarrollando sólidas {" "}
-    <span className="text-[#F29829]">estructuras legales</span>, priorizando la conservación de los centros de trabajo, manejo de{" "}
-    <span className="text-[#F29829]">contingencias laborales, representación legal </span>, ante las autoridades del trabajo, {" "}
-    <span className="text-[#F29829]">capacitación</span> del personal administrativo en temas específicos,{" "}
+    Brindamos orientación y asistencia en materia laboral desde la cultura de la
+    prevención desarrollando sólidas{" "}
+    <span className="text-[#F29829]">estructuras legales</span>, priorizando la
+    conservación de los centros de trabajo, manejo de{" "}
+    <span className="text-[#F29829]">
+      contingencias laborales, representación legal{" "}
+    </span>
+    , ante las autoridades del trabajo,{" "}
+    <span className="text-[#F29829]">capacitación</span> del personal
+    administrativo en temas específicos,{" "}
     <span className="text-[#F29829]">lineamientos y protocolos</span>
   </>,
 ];

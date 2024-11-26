@@ -20,7 +20,7 @@ function Service() {
     "Logistica-corporativa": "Logística corporativa",
     "Administracion-de-nomina": "Administración de nómina",
     "Asesoria-contable": "Asesoría contable",
-    "Asesoria-laboral-individual": "Asesoría laboral individual",
+    "Representacion-y-Asesoria-legal": "Representación y asesoría legal",
   };
 
   useEffect(() => {
@@ -45,7 +45,7 @@ function Service() {
           <Tema2 />
         ) : id === "Asesoria-contable" ? (
           <Tema3 />
-        ) : id === "Asesoria-laboral-individual" ? (
+        ) : id === "Representacion-y-Asesoria-legal" ? (
           <Tema4 />
         ) : null}
         <NewsLetter />

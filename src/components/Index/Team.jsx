@@ -12,7 +12,7 @@ function Team() {
             </h1>
 
             <div className="flex gap-4 group items-center">
-              <a
+              {/* <a
                 href="/team"
                 className="relative inline-block px-8 mt-8 md:mt-0 md:px-0 text-black"
               >
@@ -21,7 +21,7 @@ function Team() {
                     Ver más
                   </p>
                 </Observer>
-              </a>
+              </a> */}
               {/* <a href="/team" target="_blank" rel="noreferrer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,8 @@ function Team() {
           </div>
         </Observer>
       </div>
-      <TeamMembers />
+      {/* <TeamMembers /> */}
+      <img src="/Team.webp" alt="" />
     </div>
   );
 }

@@ -29,7 +29,7 @@ function Service() {
     },
     {
       title: "Representación y asesoría legal",
-      link: "/service/Asesoria-laboral-individual",
+      link: "/service/Representacion-y-Asesoria-legal",
       description:
         "Conoce como desarrollar y/o fortaecer la estructura legal de tu empresa, la cual te permitirá regir las relaciones laborales con la plantilla personal y garantizar el cumplimiento de las obligaciones contenidas en la normatividad vigente.",
     },
@@ -50,14 +50,14 @@ function Service() {
       return (
         <>
           Protegemos tus <span className="text-[#F29829]">finanzas</span> y
-          defendemos tus <span className="text-[#F29829]">derechos</span>.
+          defendemos tus <span className="text-[#F29829]">derechos</span>
         </>
       );
     } else if (index === 1) {
       return (
         <>
           Tu respaldo <span className="text-[#F29829]">financiero</span> y legal
-          en un solo <span className="text-[#F29829]">lugar</span> .
+          en un solo <span className="text-[#F29829]">lugar</span>
         </>
       );
     }

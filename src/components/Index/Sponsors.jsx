@@ -3,7 +3,7 @@ import Observer from "@components/Animation/Observer";
 
 function Sponsors() {
   const text =
-    "Nos distinguimos por la excelencia en soluciones adaptables y a la medida en consultoría, asesoramiento fiscal y laboral, donde el profesionalismo de nuestro equipo se destaca, puesto que ofrecemos toda nuestra disponibilidad y habilidades para adaptarnos a las variaciones del mercado.";
+    "Nos distinguimos por la excelencia en soluciones adaptables y a la medida en consultoría, asesoramiento fiscal y laboral, donde el profesionalismo de nuestro equipo se destaca, puesto que ofrecemos toda nuestra disponibilidad y habilidades para adaptarnos a las variaciones del mercado";
 
   const words = text.split(" ").map((word, index) => {
     if (

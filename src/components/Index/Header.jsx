@@ -34,7 +34,7 @@ function Header() {
     },
     {
       name: "Representación y asesoría Legal",
-      link: "/service/Asesoria-laboral-individual",
+      link: "/service/Representacion-y-Asesoria-legal",
     },
   ];
 
