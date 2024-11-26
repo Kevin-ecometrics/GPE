@@ -22,7 +22,7 @@ const data = [
   },
   {
     imgSrc: "/4.webp",
-    title: "Asesoría laboral individual",
+    title: "Representación y asesoría legal",
     description:
       "Apoyamos a formalizar negocios mediante asesorías para el cumplimiento de obligaciones fiscales y administrativas.",
   },

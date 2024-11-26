@@ -13,7 +13,7 @@ function Form() {
   return (
     <div className="uppercase">
       <Observer>
-        <h1 className="text-center text-5xl md:text-6xl mb-8">Contactanos</h1>
+        <h1 className="text-center text-5xl md:text-6xl mb-8">Contáctanos</h1>
       </Observer>
       <Observer>
         <form onSubmit={handleSubmit} className="px-8 md:px-0">
@@ -23,14 +23,14 @@ function Form() {
                 type="text"
                 name="name"
                 onChange={(e) => setName(e.target.value)}
-                placeholder="Cual es tu nombre"
+                placeholder="Nombre del representante"
                 className="border-b focus:outline-none border-gray-500 hover:border-[#F29829]  bg-transparent w-1/2 p-2 my-4"
               />
               <input
                 type="email"
                 name="email"
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="Cual es tu correo electronico"
+                placeholder="¿Cuál es tu correo electrónico?"
                 className="border-b focus:outline-none border-gray-500 hover:border-[#F29829] bg-transparent w-1/2 p-2 my-4"
               />{" "}
             </div>
@@ -40,7 +40,7 @@ function Form() {
               onChange={(e) => setMessage(e.target.value)}
               cols="10"
               rows="5"
-              placeholder="Hablanos sobre ti"
+              placeholder="Escribe tu mensaje"
               className="border-b focus:outline-none border-gray-500 hover:border-[#F29829] w-full p-2 my-4 bg-transparent"
             ></textarea>
             <button

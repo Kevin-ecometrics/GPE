@@ -46,16 +46,16 @@ function Privacy() {
         el nombre de la empresa, la dirección, la dirección de correo
         electrónico y el número de teléfono.
         <span className="text-[#F29829] font-bold">
-          Cómo utilizamos su información
+          Como utilizamos su información
         </span>{" "}
         Utilizamos la información que recogemos de varias maneras, incluyendo:
         Proporcionar, operar y mantener nuestra web Mejorar, personalizar y
-        ampliar nuestra web Comprender y analizar cómo se utiliza nuestra web
+        ampliar nuestra web. Comprender y analizar cómo se utiliza nuestra web.
         Desarrollar nuevos productos, servicios, características y
-        funcionalidades Comunicarse con usted, ya sea directamente o a través de
+        funcionalidades. Comunicarse con usted, ya sea directamente o a través de
         uno de nuestros socios, incluyendo el servicio de atención al cliente,
         para proporcionarle actualizaciones y otra información relacionada con
-        la web, y para fines de marketing y promoción. Enviarte emails Encontrar
+        la web, y para fines de marketing y promoción. Enviarte emails. Encontrar
         y prevenir el fraude{" "}
         <span className="text-[#F29829] font-bold">Archivos de registro</span>{" "}
         gpeconsultores.com sigue un procedimiento estándar de uso de archivos de

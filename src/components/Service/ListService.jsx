@@ -48,16 +48,11 @@ const text = [
     <span className="text-[#F29829]">estados financieros mensuales</span>
   </>,
   <>
-    Brindamos orientación y asistencia en temas laborales específicos en el
-    entorno laboral desde una perspectiva patronal donde brindando{" "}
-    <span className="text-[#F29829]">estrategias patronales</span>, asesoría en{" "}
-    <span className="text-[#F29829]">contratos individuales</span>, manejo de{" "}
-    <span className="text-[#F29829]">contingencias legales</span>, desahogo
-    representación jurídica,{" "}
-    <span className="text-[#F29829]">conciliación</span> y asesoría apoyo en la{" "}
-    <span className="text-[#F29829]">capacitación</span> al personal, entrega de
-    formatos legales y{" "}
-    <span className="text-[#F29829]">protocolos de NOM-035</span>
+    Brindamos orientación y asistencia en materia laboral desde la cultura de la prevención desarrollando sólidas {" "}
+    <span className="text-[#F29829]">estructuras legales</span>, priorizando la conservación de los centros de trabajo, manejo de{" "}
+    <span className="text-[#F29829]">contingencias laborales, representación legal </span>, ante las autoridades del trabajo, {" "}
+    <span className="text-[#F29829]">capacitación</span> del personal administrativo en temas específicos,{" "}
+    <span className="text-[#F29829]">lineamientos y protocolos</span>
   </>,
 ];
 

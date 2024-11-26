@@ -4,15 +4,15 @@ import { motion } from "framer-motion";
 function Hero() {
   const text = "EXPLORA NUEVAS ";
   const images = [
-    { src: "/1contact.webp", title: "LLamanos", description: "+526646085340" },
+    { src: "/1contact.webp", title: "LLámanos", description: "+526646085340" },
     {
       src: "/2contact.webp",
-      title: "Escribenos",
+      title: "Escríbenos",
       description: "gpeconsultores@gmail.com",
     },
     {
       src: "/3contact.webp",
-      title: "Visitanos",
+      title: "Visítanos",
       description:
         "Blvd. Gustavo Diaz Ordaz No. 12649 Local 17G-B, El Paraiso, Tijuana, Baja California.",
     },

@@ -22,7 +22,7 @@ function Num() {
   }, []);
   return (
     <div className="py-4">
-      <h2 className="uppercase text-5xl mb-8">Clientes Satisfechos </h2>
+      <h2 className="uppercase text-5xl mb-8">Años de experiencia </h2>
       <div className="flex items-start gap-2">
         <h1
           className="text-6xl mb-4"

@@ -26,7 +26,7 @@ function Tema1() {
         <div className="flex gap-4 items-center mb-4">
           <span className="font-bold text-2xl text-[#F29829]">01.</span>
           <h1 className="text-2xl uppercase">
-            Solicitud de la denom inación y razón social
+            Deshaogo de representación jurídica
           </h1>
         </div>
         <p className="text-xl mb-4">
@@ -41,7 +41,7 @@ function Tema1() {
         <div className="flex gap-4 items-center mb-4">
           <span className="font-bold text-2xl text-[#F29829]">03.</span>
           <h1 className="text-2xl uppercase">
-            Tramite en correduría o Notaria publica
+            Tramite ante fedatario público
           </h1>
         </div>
         <p className="text-xl mb-4">&nbsp; Para validez legal de documentos</p>
@@ -58,22 +58,22 @@ function Tema1() {
         <div className="flex gap-4 items-center mb-4">
           <span className="font-bold text-2xl text-[#F29829]">05.</span>
           <h1 className="text-2xl uppercase">
-            Alta de la empresa física federal y física estatal
+            Empadronamiento de personas físicas y morales
           </h1>
         </div>
         <div className="flex gap-4 items-center mb-4">
           <span className="font-bold text-2xl text-[#F29829]">06.</span>
-          <h1 className="text-2xl uppercase">Apertura de cuenta bancaria.</h1>
+          <h1 className="text-2xl uppercase">Apertura de cuenta bancaria</h1>
         </div>
         <div className="flex gap-4 items-center mb-4">
           <span className="font-bold text-2xl text-[#F29829]">07.</span>
           <h1 className="text-2xl uppercase">
-            Registro patronal ante el IMSS.
+            Registro patronal ante el IMSS
           </h1>
         </div>
         <div className="flex gap-4 items-center mb-4">
           <span className="font-bold text-2xl text-[#F29829]">08.</span>
-          <h1 className="text-2xl uppercase">Alta ante el INFONAVIT.</h1>
+          <h1 className="text-2xl uppercase">Alta ante el INFONAVIT</h1>
         </div>
         <div className="flex gap-4 items-center mb-4">
           <span className="font-bold text-2xl text-[#F29829]">09.</span>
@@ -81,7 +81,7 @@ function Tema1() {
         </div>
         <div className="flex gap-4 items-center mb-4">
           <span className="font-bold text-2xl text-[#F29829]">10.</span>
-          <h1 className="text-2xl uppercase">Obtención de folio del REPSE.</h1>
+          <h1 className="text-2xl uppercase">Obtención de folio del REPSE</h1>
         </div>
       </div>
     </div>

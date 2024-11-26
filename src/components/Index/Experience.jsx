@@ -5,9 +5,10 @@ import { motion, useAnimation } from "framer-motion";
 import Tower from "@components/Index/Tower";
 function Experience() {
   const yearExperience = [
-    { number: 6, text: "Años de experiencia" },
-    { number: 50, text: "Asesorias realizadas" },
-    { number: 20, text: "Clientes satisfechos" },
+    { number: 20, text: "Años de experiencia" },
+    { number: 80, text: "Clientes satisfechos" },
+    { number: 260, text: "Asesorias realizadas" },
+    
   ];
 
   const refs = useRef(yearExperience.map(() => React.createRef()));

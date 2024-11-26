@@ -28,10 +28,10 @@ function Service() {
         "Adéntrate en la pieza imprescindible para el patrimonio de tu empresa dónde te proporcionamos un acompañamiento y asesoría integral asegurando una planeación estratégica alineada a los objetivos financieros de tu empresa.",
     },
     {
-      title: "Asesoría individual",
+      title: "Representación y asesoría legal",
       link: "/service/Asesoria-laboral-individual",
       description:
-        "Conoce como impulsar el crecimiento de tu patrimonio con un enfoque integral orientado a una meticulosa planificación financiera que permita estructurar recursos, analizar riesgos y garantizar el cumplimiento de todas las normativas fiscales y laborales. ",
+        "Conoce como desarrollar y/o fortaecer la estructura legal de tu empresa, la cual te permitirá regir las relaciones laborales con la plantilla personal y garantizar el cumplimiento de las obligaciones contenidas en la normatividad vigente.",
     },
   ];
 
