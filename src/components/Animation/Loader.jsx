@@ -28,7 +28,7 @@ const TextAnimation = () => {
     if (hideWords) {
       const showBoxTimer = setTimeout(() => {
         setShowBox(true);
-      }, 500); // Tiempo adicional antes de mostrar el recuadro
+      }, 950); // Tiempo adicional antes de mostrar el recuadro
 
       return () => clearTimeout(showBoxTimer);
     }
@@ -59,7 +59,7 @@ const TextAnimation = () => {
                 animate={currentIndex > index ? "visible" : "hidden"}
                 exit="exit"
                 transition={{
-                  duration: 0.5,
+                  duration: 0.6,
                   ease: "easeInOut",
                   delay: index * 0.5,
                 }}

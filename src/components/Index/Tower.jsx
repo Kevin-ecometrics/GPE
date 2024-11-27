@@ -65,7 +65,7 @@ const SvgComponent = () => {
         id="Copia"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 990 990"
-        className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px]"
+        className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[450px] lg:h-[500px]"
       >
         <defs>
           <style>

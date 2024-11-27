@@ -1,5 +1,5 @@
 import Observer from "@components/Animation/Observer";
-import TeamMembers from "@components/Index/TeamMembers";
+// import TeamMembers from "@components/Index/TeamMembers";
 
 function Team() {
   return (

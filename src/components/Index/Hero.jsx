@@ -9,7 +9,7 @@ const Hero = () => {
       id="hero"
       className="md:py-4 flex md:flex-row flex-col justify-center items-center md:h-screen"
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 w-full ">
+      <div className="grid grid-cols-1 md:grid-cols-2 w-full container gap-2">
         <div className="md:hidden block mt-32">
           <Tower />
         </div>
@@ -20,7 +20,7 @@ const Hero = () => {
                 {word.split("").map((letter, letterIndex) => (
                   <motion.span
                     key={letterIndex}
-                    className={`text-[40px] sm:text-[60px] md:text-[80px] lg:text-[112px] ${
+                    className={`text-[40px] sm:text-[60px] md:text-[80px] lg:text-[100px] ${
                       ["G", "P", "E"].includes(letter)
                         ? "text-[#F29829]"
                         : "text-[#D2D2D0]"

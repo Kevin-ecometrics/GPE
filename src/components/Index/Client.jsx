@@ -41,11 +41,15 @@ function Client() {
       {data.map((item, index) => (
         <motion.div
           key={index}
-          className="text-center md:w-64 md:mb-0 mb-8 md:h-52"
+          className="text-center md:w-64 md:mb-0 mb-8"
           initial="rest"
           whileHover="hover"
           animate={selected === index ? "hover" : "rest"}
           onClick={() => handleClick(index)}
+          variants={{
+            rest: { height: "13rem" }, // h-52
+            hover: { height: "20rem" }, // h-80
+          }}
         >
           <motion.div
             variants={{
@@ -60,7 +64,7 @@ function Client() {
               title={item.title}
               className="mx-auto mb-8"
             />
-            <h3 className="text-[24px] mb-4 mt-2">{item.title}</h3>
+            <h3 className="text-[24px] mb-4 px-2 mt-2">{item.title}</h3>
           </motion.div>
           <motion.p
             variants={{
