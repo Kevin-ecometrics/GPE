@@ -9,7 +9,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FaFacebook } from "react-icons/fa";
 import { SiGooglemaps } from "react-icons/si";
 
-import Logo from "/Logo.webp";
+import Logo from "/logo.webp";
 function Header() {
   const list = [
     { name: "Servicios", link: "#services" },
@@ -145,12 +145,7 @@ function Header() {
       <div className="container mx-auto flex justify-between items-center py-4  h-[140px] md:px-0 px-4">
         <div className="flex gap-4 items-center">
           <a href="/home" title="Home">
-            <img
-              src={Logo}
-              className="w-12 h-12"
-              alt="Logo GPE"
-              title="Logo GPE"
-            />
+            <img src={Logo} alt="Logo GPE" title="Logo GPE" />
           </a>
           <AnimatePresence mode="popLayout">
             {isScrolled && (

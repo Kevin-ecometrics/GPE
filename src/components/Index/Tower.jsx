@@ -70,8 +70,8 @@ const SvgComponent = () => {
         <defs>
           <style>
             {`
-              .cls-1 { fill: #fff; }
-              .cls-2 { fill: #ef9e27; }
+              .cls-1 { fill: #f29727; }
+              .cls-2 { fill: #fff; }
             `}
           </style>
         </defs>
