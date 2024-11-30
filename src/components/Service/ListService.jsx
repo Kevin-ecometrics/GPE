@@ -31,21 +31,12 @@ const text = [
     <span className="text-[#F29829]">asesoría y timbrado</span>
   </>,
   <>
-    Te brindamos orientación para gestionar la{" "}
-    <span className="text-[#F29829]">contabilidad</span> de la empresa, como la{" "}
-    <span className="text-[#F29829]">consulta de situación fiscal</span>,
-    realizamos un{" "}
-    <span className="text-[#F29829]">
-      análisis de control de ingresos y egresos
-    </span>
-    , elaboración de <span className="text-[#F29829]">declaraciones</span>,
-    impuestos sobre la renta por actividad empresarial{" "}
-    <span className="text-[#F29829]">ISR</span>, presentación de impuesto al
-    valor agregado <span className="text-[#F29829]">IVA</span>,{" "}
-    <span className="text-[#F29829]">declaración anual</span>,{" "}
-    <span className="text-[#F29829]">facturas</span>,{" "}
-    <span className="text-[#F29829]">notas de crédito</span>, y elaboración de{" "}
-    <span className="text-[#F29829]">estados financieros mensuales</span>
+    Te brindamos orientación para {" "}
+    <span className="text-[#F29829]">optimizar </span> la gestión financiera, {" "}
+    <span className="text-[#F29829]">cumplir</span>, con las {" "}
+    <span className="text-[#F29829]">normatividades legales
+    </span> y mejorar <span className="text-[#F29829]">la rentabilidad </span>,
+    de tu negocio {" "}
   </>,
   <>
     Brindamos orientación y asistencia en materia laboral desde la cultura de la

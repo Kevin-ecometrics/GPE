@@ -9,7 +9,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FaFacebook } from "react-icons/fa";
 import { SiGooglemaps } from "react-icons/si";
 
-import Logo from "/logo.webp";
+import Logo from "/Logo.webp";
 function Header() {
   const list = [
     { name: "Servicios", link: "#services" },

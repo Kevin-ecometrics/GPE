@@ -18,7 +18,7 @@ const data = [
     imgSrc: "/3.webp",
     title: "Asesoría contable",
     description:
-      "Proporcionamos asesoramiento para el manejo, control y cuidado de las obligaciones fiscales y administrativas de cada uno de nuestros clientes.",
+      "Proporcionamos asesoramiento para el manejo, control y cuidado de las obligaciones fiscales de cada uno de nuestros clientes.",
   },
   {
     imgSrc: "/4.webp",
