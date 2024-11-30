@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useState, useEffect } from "react";
+import react, { useState, useEffect } from "react";
 import blogs from "@components/Index/ListBlogs";
 import { useLocation } from "react-router-dom";
 import PoliticasDePrivacidad from "@components/Modal/Privacy";
