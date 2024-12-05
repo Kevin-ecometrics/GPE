@@ -1,4 +1,5 @@
 import Num from "@components/Service/Num";
+
 function Tema2() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 px-8 gap-8">
