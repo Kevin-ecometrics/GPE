@@ -25,8 +25,8 @@ function Header() {
       link: "/service/Logistica-corporativa",
     },
     {
-      name: "Administracion de nomina",
-      link: "/service/Administracion-de-nomina",
+      name: "Asesoria administrativa",
+      link: "/service/Asesoria-administrativa",
     },
     {
       name: "Asesoria contable",

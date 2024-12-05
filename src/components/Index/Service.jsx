@@ -16,10 +16,10 @@ function Service() {
         "Explora a fondo la pieza fundamental para la constitución, organización y gestión eficiente de tu  empresa, que permite la correcta realización de trámites, obtención de permisos y cumplimiento de obligaciones fiscales y contables.",
     },
     {
-      title: "Administración de Nómina",
-      link: "/service/Administracion-de-nomina",
+      title: "Asesoría Administrativa",
+      link: "/service/Asesoria-administrativa",
       description:
-        "Conoce a fondo el elemento esencial para la óptima gestión y control de recurso y talento humano; asegurando el estricto cumplimiento de las regulaciones vigentes y fomentando la retención talento. ",
+        "Conoce a fondo el elemento esencial para la óptima gestión, control de recurso y talento humano; asegurando el estricto cumplimiento de las regulaciones vigentes y fomentando la retención talento. ",
     },
     {
       title: "Asesoría contable",

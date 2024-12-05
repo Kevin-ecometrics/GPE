@@ -18,7 +18,7 @@ function Service() {
 
   const titlesWithAccents = {
     "Logistica-corporativa": "Logística corporativa",
-    "Administracion-de-nomina": "Administración de nómina",
+    "Asesoria-administrativa": "Asesoría Administrativa",
     "Asesoria-contable": "Asesoría contable",
     "Representacion-y-Asesoria-legal": "Representación y asesoría legal",
   };
@@ -41,7 +41,7 @@ function Service() {
         <Hero title={formattedText} subtitle={description} />
         {id === "Logistica-corporativa" ? (
           <Tema1 />
-        ) : id === "Administracion-de-nomina" ? (
+        ) : id === "Asesoria-administrativa" ? (
           <Tema2 />
         ) : id === "Asesoria-contable" ? (
           <Tema3 />

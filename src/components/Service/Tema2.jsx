@@ -26,38 +26,64 @@ function Tema2() {
         <div className="flex gap-4 items-center mb-4">
           <span className="font-bold text-2xl text-[#F29829]">01.</span>
           <h1 className="text-2xl uppercase">Apertura de Registro Patronal</h1>
-          </div>
-          <p className="mb-4 text-xl">Patrón Persona Física y Persona Moral</p>
+        </div>
+        <p className="mb-4 text-xl">Patrón Persona Física y Persona Moral</p>
         <div className="flex gap-4 items-center mb-4">
           <span className="font-bold text-2xl text-[#F29829]">02.</span>
-          <h1 className="text-2xl uppercase"> Movimientos afiliatorios ()</h1>
+          <h1 className="text-2xl uppercase"> Movimientos afiliatorios</h1>
         </div>
-        <p className="mb-4 text-xl">Solicitud y renovación de Certificado Digital 
-        para movimientos afiliatorios</p>
+        <p className="mb-4 text-xl">
+          Solicitud y renovación de Certificado Digital para movimientos
+          afiliatorios
+        </p>
         <p className="mb-4 text-xl">Altas, bajas e incapacidades</p>
 
         <div className="flex gap-4 items-center mb-4">
           <span className="font-bold text-2xl text-[#F29829]">03.</span>
-          <h1 className="text-2xl uppercase">Cálculo de nómina</h1>
+          <h1 className="text-2xl uppercase">Cuotas obrero-patronales</h1>
         </div>
+        <p className="mb-4 text-xl">
+          Determinación y cálculo de cuotas obrero-patronales
+        </p>
+        <p className="mb-4 text-xl">
+          IMSS e INFONAVIT, FONACOT, SAT, AFORE, entre otros
+        </p>
+
         <div className="flex gap-4 items-center mb-4">
           <span className="font-bold text-2xl text-[#F29829]">04.</span>
-          <h1 className="text-2xl uppercase">
-            {" "}
-            Dispersión en el pago de nómina
-          </h1>
+          <h1 className="text-2xl uppercase"> Nómina</h1>
         </div>
+        <p className="mb-4 text-xl">
+          Determinación del cálculo, Dispersión y Timbrado de Nómina
+        </p>
         <div className="flex gap-4 items-center mb-4">
           <span className="font-bold text-2xl text-[#F29829]">05.</span>
           <h1 className="text-2xl uppercase">
             {" "}
-            Asesoría de capitales constitutivos
+            Asesoría para obtener Afilicación ante el REPSE
           </h1>
         </div>
+        <p className="mb-4 text-xl">
+          Registro de prestadora de servicios especializados u obras
+          especializadas
+        </p>
         <div className="flex gap-4 items-center mb-4">
           <span className="font-bold text-2xl text-[#F29829]">06.</span>
-          <h1 className="text-2xl uppercase"> Timbrado de recibos de nómina</h1>
+          <h1 className="text-2xl uppercase">Informativas REPSE</h1>
         </div>
+        <p className="mb-4 text-xl">
+          Asesoría para presentación de informativas REPSE (El Registro de
+          Prestadores de Servicios Especializados u Obras Especializadas )
+        </p>
+        <div className="flex gap-4 items-center mb-4">
+          <span className="font-bold text-2xl text-[#F29829]">07.</span>
+          <h1 className="text-2xl uppercase">
+            Asesoría para obtener Afilicación de Centros de Trabajo
+          </h1>
+        </div>
+        <p className="mb-4 text-xl">
+          Persona Física y Persona Moral ante FONACOT
+        </p>
       </div>
     </div>
   );
