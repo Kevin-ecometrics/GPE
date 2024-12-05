@@ -21,21 +21,20 @@ const text = [
     <span className="text-[#F29829]">FONACOT</span>
   </>,
   <>
-    Nos encargamos de organizar y calcular el cumplimiento de las{" "}
-    <span className="text-[#F29829]">obligaciones</span> laborales,{" "}
-    <span className="text-[#F29829]">fiscales</span> y de seguridad social como
-    el <span className="text-[#F29829]">registro patronal</span>,{" "}
-    <span className="text-[#F29829]">movimientos afiliativos</span>,{" "}
-    <span className="text-[#F29829]">cálculo de nómina</span>, dispersión en el{" "}
-    <span className="text-[#F29829]">pago de nómina</span>,{" "}
-    <span className="text-[#F29829]">asesoría y timbrado</span>
+    Nos encargamos de{" "}
+    <span className="text-[#F29829]">organizar</span> y priorizar el{" "}
+    <span className="text-[#F29829]">cumplimiento de las obligaciones </span> que un empresario debe 
+    el <span className="text-[#F29829]">gestionar</span>, tanto {" "}
+    <span className="text-[#F29829]">administrativa y laborales</span>, como {" "}
+    <span className="text-[#F29829]">fiscales </span> y de{" "}
+    <span className="text-[#F29829]">seguridad social</span>.{" "}
   </>,
   <>
     Te brindamos orientación para {" "}
     <span className="text-[#F29829]">optimizar </span> la gestión financiera, {" "}
-    <span className="text-[#F29829]">cumplir</span>, con las {" "}
-    <span className="text-[#F29829]">normatividades legales
-    </span> y mejorar <span className="text-[#F29829]">la rentabilidad </span>,
+    <span className="text-[#F29829]">cumplir</span> con las {" "}
+    <span className="text-[#F29829]">normatividades 
+    </span> legales y mejorar la <span className="text-[#F29829]">rentabilidad </span>
     de tu negocio {" "}
   </>,
   <>

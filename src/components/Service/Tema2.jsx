@@ -25,13 +25,16 @@ function Tema2() {
         <h1 className="text-5xl mb-4 uppercase">Principales servicios</h1>
         <div className="flex gap-4 items-center mb-4">
           <span className="font-bold text-2xl text-[#F29829]">01.</span>
-          <h1 className="text-2xl uppercase">Registro Patronal</h1>
-        </div>
+          <h1 className="text-2xl uppercase">Apertura de Registro Patronal</h1>
+          </div>
+          <p className="mb-4 text-xl">Patrón Persona Física y Persona Moral</p>
         <div className="flex gap-4 items-center mb-4">
           <span className="font-bold text-2xl text-[#F29829]">02.</span>
-          <h1 className="text-2xl uppercase"> Movimientos afiliatorios</h1>
+          <h1 className="text-2xl uppercase"> Movimientos afiliatorios ()</h1>
         </div>
-        <p className="mb-4 text-xl">Altas, Bajas y Avisos</p>
+        <p className="mb-4 text-xl">Solicitud y renovación de Certificado Digital 
+        para movimientos afiliatorios</p>
+        <p className="mb-4 text-xl">Altas, bajas e incapacidades</p>
 
         <div className="flex gap-4 items-center mb-4">
           <span className="font-bold text-2xl text-[#F29829]">03.</span>

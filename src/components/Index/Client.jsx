@@ -10,15 +10,15 @@ const data = [
   },
   {
     imgSrc: "/2.webp",
-    title: "Administración de nómina",
+    title: "Asesoría Administrativa",
     description:
-      "Brindamos soluciones en administración y realización de pagos a colaboradores a sí mismo en la apertura de registros patronales.",
+      "Brindamos soluciones para la administración del recurso humano dentro del centro de trabajo, la disminución de riesgos fiscales y el ahorro.",
   },
   {
     imgSrc: "/3.webp",
     title: "Asesoría contable",
     description:
-      "Proporcionamos asesoramiento para el manejo, control y cuidado de las obligaciones fiscales de cada uno de nuestros clientes.",
+      "Proporcionamos asesoramiento en el manejo, control y cuidado de las obligaciones fiscales de cada uno de nuestros clientes.",
   },
   {
     imgSrc: "/4.webp",

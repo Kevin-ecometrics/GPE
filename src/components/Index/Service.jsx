@@ -19,7 +19,7 @@ function Service() {
       title: "Administración de Nómina",
       link: "/service/Administracion-de-nomina",
       description:
-        "Conoce a fondo el elemento esencial para la óptima gestión y control de pagos e impuestos, asegurando el estricto cumplimiento de las regulaciones laborales y fiscales vigentes para la retención talento. ",
+        "Conoce a fondo el elemento esencial para la óptima gestión y control de recurso y talento humano; asegurando el estricto cumplimiento de las regulaciones vigentes y fomentando la retención talento. ",
     },
     {
       title: "Asesoría contable",
