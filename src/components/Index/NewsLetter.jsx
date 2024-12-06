@@ -46,7 +46,7 @@ function NewsLetter() {
       <div className="grid grid-cols-1 md:grid-cols-2 md:mt-16">
         <div>
           <video
-            src="/video.mp4"
+            src="/video.webm"
             className="w-screen md:h-[900px] object-cover"
             autoPlay
             loop
