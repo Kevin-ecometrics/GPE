@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import React from "react";
 
 const Hero = ({ title, subtitle }) => {
   const valores = [
