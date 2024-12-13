@@ -4,7 +4,7 @@ function Num() {
   const [num, setNum] = useState(0);
 
   useEffect(() => {
-    const target = 20;
+    const target = 14;
     const interval = 50;
     const increment = Math.ceil(target / (3000 / interval));
 

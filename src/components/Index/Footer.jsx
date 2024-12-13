@@ -27,7 +27,7 @@ function Footer() {
   );
 
   return (
-    <div className="md:container mx-auto py-8 px-8 md:px-0">
+    <div className="md:container mx-auto mt-36 py-8 px-8 md:px-0">
       <div className="grid grid-cols-1 md:grid-cols-2 py-8 mb-12">
         <div className="flex justify-between flex-col md:flex-row items-start md:items-center">
           <h1 className="text-4xl lg:text-6xl uppercase mb-4 lg:mb-0">

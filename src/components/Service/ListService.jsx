@@ -43,9 +43,12 @@ const text = [
     <span className="text-[#F29829]">estructuras legales</span>, priorizando la
     conservación de los centros de trabajo, manejo de{" "}
     <span className="text-[#F29829]">
-      contingencias laborales, representación legal{" "}
+      contingencias laborales
+    </span>,
+    <span className="text-[#F29829]">
+    {" "}representación legal{" "}
     </span>
-    , ante las autoridades del trabajo,{" "}
+    ante las autoridades del trabajo,{" "}
     <span className="text-[#F29829]">capacitación</span> del personal
     administrativo en temas específicos,{" "}
     <span className="text-[#F29829]">lineamientos y protocolos</span>

@@ -5,7 +5,7 @@ import { motion, useAnimation } from "framer-motion";
 import Tower from "@components/Index/Tower";
 function Experience() {
   const yearExperience = [
-    { number: 20, text: "Años de experiencia" },
+    { number: 14, text: "Años de experiencia" },
     { number: 80, text: "Clientes satisfechos" },
     { number: 260, text: "Asesorias realizadas" },
     
@@ -88,7 +88,7 @@ function Experience() {
   };
 
   return (
-    <div className="md:py-44">
+    <div className="md:py-64">
       <p className="text-[23px] text-[#D2D2D099] mb-12 text-center md:text-start">
         Conoce nuestra experiencia
       </p>

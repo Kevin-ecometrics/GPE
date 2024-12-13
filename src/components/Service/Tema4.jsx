@@ -43,7 +43,7 @@ function Tema4() {
           <h1 className="text-2xl uppercase"> Atención de inspecciones </h1>
         </div>
         <p className="text-xl mb-4">
-          Deshaogo de inspecciones de la STPS{" "}
+          Desahogo de inspecciones de la STPS{" "}
         </p>
         <div className="flex gap-4 items-center mb-4">
           <span className="font-bold text-2xl text-[#F29829]">04.</span>
@@ -66,7 +66,7 @@ function Tema4() {
           Elaboración y/o actualización del Reglamento Interno de Trabajo
         </p>
         <p className="text-xl mb-4">
-          Protocolo para prevernir riesgos psicosociales
+          Protocolo para prevenir riesgos psicosociales
         </p>
         <p className="text-xl mb-4">
           Formación de comisiones mixtas
