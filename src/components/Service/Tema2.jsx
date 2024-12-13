@@ -31,7 +31,7 @@ function Tema2() {
         <p className="mb-4 text-xl">Patrón Persona Física y Persona Moral</p>
         <div className="flex gap-4 items-center mb-4">
           <span className="font-bold text-2xl text-[#F29829]">02.</span>
-          <h1 className="text-2xl uppercase"> Movimientos afiliatorios ()</h1>
+          <h1 className="text-2xl uppercase"> Movimientos afiliatorios </h1>
         </div>
         <p className="mb-4 text-xl">
           Solicitud y renovación de Certificado Digital para movimientos
