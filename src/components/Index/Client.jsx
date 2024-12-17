@@ -6,7 +6,7 @@ const data = [
     imgSrc: "/1.webp",
     title: "Logística corporativa",
     description:
-      "Ayudamos a nuestros clientes a iniciar o continuar con las funciones de su empresa con los trámites y acompañamientos permitentes.",
+      "Realizamos los trámites legales por nuestros clientes, ya sea para personas físicas o morales.",
   },
   {
     imgSrc: "/2.webp",

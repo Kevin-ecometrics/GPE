@@ -13,7 +13,7 @@ function Service() {
       title: "Logística corporativa",
       link: "/service/Logistica-corporativa",
       description:
-        "Explora a fondo la pieza fundamental para la constitución, organización y gestión eficiente de tu  empresa, que permite la correcta realización de trámites, obtención de permisos y cumplimiento de obligaciones fiscales y contables.",
+        "Explora a fondo los servicios que brindamos y que te permitirán operar tu negocio dentro del marco normativo correspondiente.",
     },
     {
       title: "Asesoría Administrativa",
