@@ -1,6 +1,6 @@
 import Observer from "@components/Animation/Observer";
 import { motion } from "framer-motion";
-import React, { useState } from "react";
+import { useState } from "react";
 
 function Hero() {
   const text = "EXPLORA NUEVAS ";
