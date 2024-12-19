@@ -1,5 +1,6 @@
 import Observer from "@components/Animation/Observer";
 import { motion } from "framer-motion";
+import React, { useState } from "react";
 
 function Hero() {
   const text = "EXPLORA NUEVAS ";
@@ -17,6 +18,11 @@ function Hero() {
         "Blvd. Gustavo Diaz Ordaz No. 12649 Local 17G-B, El Paraiso, Tijuana, Baja California.",
     },
   ];
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const handleTouch = (index) => {
+    setActiveIndex(index === activeIndex ? null : index);
+  };
 
   return (
     <div className=" uppercase flex justify-center items-center flex-col py-32 md:py-32">
@@ -58,7 +64,8 @@ function Hero() {
               className="text-center md:w-64 md:mb-0 mb-8 md:h-52"
               initial="rest"
               whileHover="hover"
-              animate="rest"
+              animate={activeIndex === index ? "hover" : "rest"}
+              onTouchStart={() => handleTouch(index)}
             >
               <motion.div
                 variants={{
@@ -68,7 +75,7 @@ function Hero() {
                 className="relative hover:text-[#F29829]"
               >
                 <img src={item.src} alt={item.title} className="mx-auto mb-8" />
-                <h3 className="text-[24px]  mb-4 mt-2 ">{item.title}</h3>
+                <h3 className="text-[24px] mb-4 mt-2">{item.title}</h3>
               </motion.div>
               <motion.p
                 variants={{
@@ -76,7 +83,6 @@ function Hero() {
                   hover: { opacity: 1, y: 0 },
                 }}
                 transition={{ duration: 0.3 }}
-                className="text-[16px] px-4  mt-1"
               >
                 {item.description}
               </motion.p>
