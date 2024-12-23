@@ -5,12 +5,17 @@ import { subscribeToNewsletter } from "@routes/api";
 
 function NewsLetter() {
   const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
+    setSuccess(false);
     try {
       const res = await subscribeToNewsletter(email);
       toast.success(res.data.message);
+      setSuccess(true);
       setEmail("");
     } catch (error) {
       if (error.response && error.response.status === 400) {
@@ -18,6 +23,8 @@ function NewsLetter() {
       } else {
         console.error("Error en el servidor");
       }
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -78,24 +85,51 @@ function NewsLetter() {
               className="bg-[#F29829] hover:bg-white hover:text-orange-600 transition-transform 
             duration-300 ease-in-out
           text-white rounded-full p-4 absolute right-2  top-2 "
+              disabled={loading}
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M5 12l14 0" />
-                <path d="M13 18l6 -6" />
-                <path d="M13 6l6 6" />
-              </svg>
+              {loading ? (
+                <svg
+                  className="animate-spin h-5 w-5 text-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <circle
+                    className="opacity-25"
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                  ></circle>
+                  <path
+                    className="opacity-75"
+                    fill="currentColor"
+                    d="M4 12a8 8 0 018-8v8H4z"
+                  ></path>
+                </svg>
+              ) : (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M5 12l14 0" />
+                  <path d="M13 18l6 -6" />
+                  <path d="M13 6l6 6" />
+                </svg>
+              )}
             </button>
             <Toaster position="top-right" />
           </form>
+          {success && (
+            <p className="text-white mt-4">¡Gracias por suscribirte!</p>
+          )}
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 px-4 md:px-0">
