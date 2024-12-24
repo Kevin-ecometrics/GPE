@@ -5,17 +5,24 @@ import { useState } from "react";
 function Hero() {
   const text = "EXPLORA NUEVAS ";
   const images = [
-    { src: "/1contact.webp", title: "LLámanos", description: "+526646085340" },
     {
-      src: "/2contact.webp",
-      title: "Escríbenos",
-      description: "gpeconsultores@gmail.com",
+      src: "/llama a gpe Consultores al 664 608 5340.webp",
+      title: "LLámanos",
+      description: "+526646085340",
+      alt: "GPE consultores esta a una llamada para apoyarte en materia laboral y contable al 664 608 5340",
     },
     {
-      src: "/3contact.webp",
+      src: "/en gpe consultores estamos comprometidos con tu negocio escribenos.webp",
+      title: "Escríbenos",
+      description: "gpeconsultores@gmail.com",
+      alt: "En GPE consultores puedes llenar un formulario para conocer tu situación y apoyarte en la brevedad, escribenos",
+    },
+    {
+      src: "/Nos encontramos en Plaza patria listos para atenderte.webp",
       title: "Visítanos",
       description:
         "Blvd. Gustavo Diaz Ordaz No. 12649 Local 17G-B, El Paraiso, Tijuana, Baja California.",
+      alt: " Nos encontramos cerca de ti en plaza patria de lunes a viernes listos para apoyarte",
     },
   ];
   const [activeIndex, setActiveIndex] = useState(null);
@@ -74,7 +81,12 @@ function Hero() {
                 }}
                 className="relative hover:text-[#F29829]"
               >
-                <img src={item.src} alt={item.title} className="mx-auto mb-8" />
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  title={item.alt}
+                  className="mx-auto mb-8"
+                />
                 <h3 className="text-[24px] mb-4 mt-2">{item.title}</h3>
               </motion.div>
               <motion.p

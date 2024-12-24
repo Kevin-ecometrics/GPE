@@ -3,25 +3,30 @@ import { motion } from "framer-motion";
 
 const data = [
   {
-    imgSrc: "/1.webp",
+    imgSrc: "/La mejor opcion en logistica corporativa en Tijuana.webp",
+    alt: "GPE es la mejor opción en logística corporativa en Tijuana para tu negocio o empresa  ",
     title: "Logística corporativa",
     description:
       "Realizamos los trámites legales por nuestros clientes, ya sea para personas físicas o morales.",
   },
   {
-    imgSrc: "/2.webp",
+    imgSrc: "/Asesoria de primer nivel en Tijuana.webp",
+    alt: "Gpe brinda orientación y asesoría de primer nivel para que todo marche conforme a la ley en  Tijuana  ",
     title: "Asesoría Administrativa",
     description:
       "Brindamos soluciones para la administración del recurso humano dentro del centro de trabajo, la disminución de riesgos fiscales y el ahorro.",
   },
   {
-    imgSrc: "/3.webp",
+    imgSrc: "/GPE ofrece Precision en asesoria contable.webp",
+    alt: "GPE ofrece precisión en asesoría contable para regularizar tu negocio dentro del marco legal  ",
     title: "Asesoría contable",
     description:
       "Proporcionamos asesoramiento en el manejo, control y cuidado de las obligaciones fiscales de cada uno de nuestros clientes.",
   },
   {
-    imgSrc: "/4.webp",
+    imgSrc:
+      "/GPE tiene un alto compromiso en representacion y asesoria legal.webp",
+    alt: "GPE tiene un alto compromiso en representación y asesoría legal ante autoridades de trabajo, lineamientos, contingencias y mas  ",
     title: "Representación y asesoría legal",
     description:
       "Apoyamos a formalizar negocios mediante asesorías para el cumplimiento de obligaciones fiscales y administrativas.",
@@ -60,8 +65,8 @@ function Client() {
           >
             <img
               src={item.imgSrc}
-              alt={item.title}
-              title={item.title}
+              alt={item.alt}
+              title={item.alt}
               className="mx-auto mb-8"
             />
             <h3 className="text-[24px] mb-4 px-2 mt-2">{item.title}</h3>

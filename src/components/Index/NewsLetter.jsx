@@ -53,12 +53,13 @@ function NewsLetter() {
       <div className="grid grid-cols-1 md:grid-cols-2 md:mt-16">
         <div>
           <video
-            src="/video.webm"
+            src="/gpe-consultores-edificando-negocios.webm"
             className="w-screen md:h-[900px] object-cover"
             autoPlay
             loop
             muted
             playsInline
+            title=" Somos GPE edificamos tu negocio hacia el exito con un equipo multidisciplinario en logistica corporativa, asesoria administrativa, asesoria contable y representacion legal y asesoria legal"
           ></video>
         </div>
         <div className="flex justify-center items-start px-4 md:px-16 flex-col bg-[#181817]">

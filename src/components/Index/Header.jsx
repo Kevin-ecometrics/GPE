@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-import react, { useState, useEffect } from "react";
-import blogs from "@components/Index/ListBlogs";
+import { useState, useEffect } from "react";
+// import blogs from "@components/Index/ListBlogs";
 import { useLocation } from "react-router-dom";
 import PoliticasDePrivacidad from "@components/Modal/Privacy";
 import TerminosYCondiciones from "@components/Modal/Terms";
@@ -8,8 +8,8 @@ import SiteMap from "@components/Modal/SiteMap";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaFacebook } from "react-icons/fa";
 import { SiGooglemaps } from "react-icons/si";
+import Logo from "/Somos GPE Ofrecemos soluciones en materia fiscal y laboral.webp";
 
-import Logo from "/Logo.webp";
 function Header() {
   const list = [
     { name: "Servicios", link: "#services" },
@@ -145,7 +145,11 @@ function Header() {
       <div className="container mx-auto flex justify-between items-center py-4  h-[140px] md:px-0 px-4">
         <div className="flex gap-4 items-center">
           <a href="/home" title="Home">
-            <img src={Logo} alt="Logo GPE" title="Logo GPE" />
+            <img
+              src={Logo}
+              alt="Somos una firma que ofrece soluciones en materia fiscal y laboral con más de 20 años de experiencia"
+              title="Somos una firma que ofrece soluciones en materia fiscal y laboral con más de 20 años de experiencia"
+            />
           </a>
           <AnimatePresence mode="popLayout">
             {isScrolled && (

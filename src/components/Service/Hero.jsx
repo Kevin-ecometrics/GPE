@@ -2,9 +2,21 @@ import { motion } from "framer-motion";
 
 const Hero = ({ title, subtitle }) => {
   const valores = [
-    { src: "/Compromiso.webp", text: "Compromiso" },
-    { src: "/Confidencialidad.webp", text: "Confidencialidad" },
-    { src: "/Honestidad.webp", text: "Honestidad" },
+    {
+      src: "/GPE te encamina con compromiso y lealtad al exito.webp",
+      text: "Compromiso",
+      alt: "En GPE buscan encaminarte al exito gracias a su increible compromiso y lealtad ",
+    },
+    {
+      src: "/GPE te brinda total confidencialidad en tu proceso fiscal y contable.webp",
+      text: "Confidencialidad",
+      alt: "En GPE te brindamos toda la confidencialidad que tu negocio y empresa requiera en su proceso fiscal y contable  ",
+    },
+    {
+      src: "/GPE proporciona honestidad y trasparencia su  trabajo.webp",
+      text: "Honestidad",
+      alt: "GPE te proporciona total honestidad y trasparencia en su metodología de trabajo ",
+    },
   ];
 
   console.log(title);
@@ -42,7 +54,12 @@ const Hero = ({ title, subtitle }) => {
             key={index}
             className="flex justify-between flex-col px-16 items-center "
           >
-            <img src={valor.src} alt={valor.text} className="mb-8" />
+            <img
+              src={valor.src}
+              alt={valor.alt}
+              title={valor.alt}
+              className="mb-8"
+            />
             <p>{valor.text}</p>
           </div>
         ))}

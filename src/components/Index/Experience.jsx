@@ -8,7 +8,6 @@ function Experience() {
     { number: 14, text: "Años de experiencia" },
     { number: 80, text: "Clientes satisfechos" },
     { number: 260, text: "Asesorias realizadas" },
-    
   ];
 
   const refs = useRef(yearExperience.map(() => React.createRef()));
@@ -116,7 +115,11 @@ function Experience() {
         </div>
 
         <div>
-          <img src="/gpeHero2.png" alt="" />
+          <img
+            src="/GPE edificando negocios.png"
+            alt="Somos GPE edificamos negocios con compromiso confidencialidad y honestidad  "
+            title="Somos GPE edificamos negocios con compromiso confidencialidad y honestidad  "
+          />
         </div>
       </div>
     </div>

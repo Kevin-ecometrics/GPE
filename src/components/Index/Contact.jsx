@@ -30,9 +30,9 @@ function Contact() {
         <div className="flex justify-center items-center py-8 md:py-0 px-8 md:px-0">
           <Observer>
             <img
-              src="/contact.webp"
-              alt="Imagen de Contacto"
-              title="Imagen de Contacto"
+              src="/En GPE trabajamos para el exito de tu negocio.webp"
+              alt="En GPE trabajamos arduamente para el éxito y prosperidad de tu negocio en el ámbito contable y fiscal  "
+              title="En GPE trabajamos arduamente para el éxito y prosperidad de tu negocio en el ámbito contable y fiscal  "
               className="md:w-screen"
             />
           </Observer>

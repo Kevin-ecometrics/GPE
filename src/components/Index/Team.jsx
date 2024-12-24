@@ -46,7 +46,11 @@ function Team() {
         </Observer>
       </div>
       {/* <TeamMembers /> */}
-      <img src="/Team.webp" alt="" />
+      <img
+        src="/Nuestro equipo multidisciplinario siempre comprometido con tu negocio.webp"
+        alt="En GPE nuestro equipo multidisciplinario siempre está comprometido para proyectar al éxito  "
+        title="En GPE nuestro equipo multidisciplinario siempre está comprometido para proyectar al éxito  "
+      />
     </div>
   );
 }
