@@ -4,34 +4,22 @@ import { motion, AnimatePresence } from "framer-motion";
 function Reviews() {
   const reviews = [
     {
-      avatar: "/path/to/avatar1.jpg",
-      name: "Carlos Hernández",
-      position: "Director General",
-      text: "Excelente servicio y atención al cliente. Muy satisfecho con los resultados.",
+      avatar: "/1. Restaurant Mi puerto Sabor a Mar.webp",
+      name: "Alfonso Jimenez",
+      position: "Propietario de Mariscos Mi Puerto",
+      text: "Queremos expresar nuestro más sincero agradecimiento a GPE a su equipo de abogados, contadores y consultores por su compromiso, por brindarnos siempre una atención pronta y eficaz . Su colaboración ha sido clave para el éxito de nuestro negocio, Estamos muy orgullosos de contar con un equipo confiable como GPE Consultores",
     },
     {
-      avatar: "/path/to/avatar2.jpg",
-      name: "María López",
-      position: "Gerente de Proyectos",
-      text: "El equipo es muy profesional y cumplió con todas nuestras expectativas.",
+      avatar: "/2. Wingman.webp",
+      name: "Manuel Robles",
+      position: "Propietario de Wingman",
+      text: "El servicio que me han brindado la Licenciada Berenice y el Licenciado Issac, durante este tiempo ha sido de excelente agrado, siempre están pendiente de lo que necesito, son muy accesibles y amables. Solo me queda expresar mi agradecimiento con su profesionalismo",
     },
     {
-      avatar: "/path/to/avatar3.jpg",
-      name: "Luis Martínez",
-      position: "Jefe de Tecnología",
-      text: "Gran experiencia trabajando con ellos. Altamente recomendados.",
-    },
-    {
-      avatar: "/path/to/avatar4.jpg",
-      name: "Ana Gómez",
-      position: "Directora de Marketing",
-      text: "La calidad del trabajo es excepcional. Definitivamente volveremos a contratar sus servicios.",
-    },
-    {
-      avatar: "/path/to/avatar5.jpg",
-      name: "Jorge Ramírez",
-      position: "Coordinador de Ventas",
-      text: "Muy profesionales y atentos a los detalles. Excelente colaboración.",
+      avatar: "/3. Aranea.webp",
+      name: "Jorge Tapia",
+      position: "Gerente de Aranea Telecom",
+      text: "El equipo de GPE Consultores se ha convertido en un aliado estratégico en la toma de decisiones, brindando recomendaciones administrativas y legales acordea las necesidades de nuestra empresa",
     },
   ];
 
@@ -105,7 +93,7 @@ function Reviews() {
             <path d="M5 12l6 -6" />
           </svg>
         </div>
-        <div className="w-64 mb-8 md:mb-0 md:w-96 h-96 flex justify-center items-center overflow-hidden relative">
+        <div className=" mb-8 md:mb-0 w-80 md:w-96 h-[600px] md:h-[500px] flex justify-center items-center overflow-hidden relative">
           <AnimatePresence initial={false} custom={direction}>
             <motion.div
               key={currentIndex}
@@ -137,12 +125,12 @@ function Reviews() {
                 isDragging ? "cursor-grabbing" : "cursor-grab"
               }`}
             >
-              {/* <img
+              <img
                 src={reviews[currentIndex].avatar}
                 alt={reviews[currentIndex].name}
                 className="w-24 h-24 rounded-full mb-4"
-              /> */}
-              <svg
+              />
+              {/* <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="64"
                 height="64"
@@ -155,7 +143,7 @@ function Reviews() {
                 <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
                 <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
                 <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
-              </svg>
+              </svg> */}
               <h3 className="text-2xl mb-4">{reviews[currentIndex].name}</h3>
               <p className="text-lg mb-4">{reviews[currentIndex].position}</p>
               {/* <p className="mt-2">{reviews[currentIndex].text}</p> */}
