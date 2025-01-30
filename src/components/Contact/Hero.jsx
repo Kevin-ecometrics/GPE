@@ -14,7 +14,7 @@ function Hero() {
     {
       src: "/en gpe consultores estamos comprometidos con tu negocio escribenos.webp",
       title: "Escríbenos",
-      description: "gpeconsultores@gmail.com",
+      description: "administracion@gpeconsultores.com.mx",
       alt: "En GPE consultores puedes llenar un formulario para conocer tu situación y apoyarte en la brevedad, escribenos",
     },
     {

@@ -296,11 +296,11 @@ function Header() {
                     </p>
                   </a>
                   <a
-                    href="mailto:legal@gpeconsultores.com.mx"
+                    href="mailto:administracion@gpeconsultores.com.mx"
                     className="text-lg hover:text-white"
                   >
                     <p className="text-lg hover:text-white">
-                      Email: legal@gpeconsultores.com.mx{" "}
+                      Email: administracion@gpeconsultores.com.mx{" "}
                     </p>
                   </a>
                   <a
