@@ -8,7 +8,7 @@ function Hero() {
     {
       src: "/llama a gpe Consultores al 664 608 5340.webp",
       title: "LLámanos",
-      description: "+526646085340",
+      description: "+526631216201",
       alt: "GPE consultores esta a una llamada para apoyarte en materia laboral y contable al 664 608 5340",
     },
     {
