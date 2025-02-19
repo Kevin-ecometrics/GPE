@@ -64,7 +64,7 @@ function Hero() {
         </div>
       </Observer>
       <Observer>
-        <div className="flex flex-col md:flex-row md:justify-between items-center gap-12 mx-auto uppercase">
+        <div className=" flex-col md:flex-row md:justify-between items-center gap-12 mx-auto uppercase hidden md:flex">
           {images.map((item, index) => (
             <motion.div
               key={index}
@@ -102,6 +102,43 @@ function Hero() {
           ))}
         </div>
       </Observer>
+      <div className=" flex-col md:flex-row md:justify-between items-center gap-12 mx-auto uppercase flex md:hidden">
+        {images.map((item, index) => (
+          <motion.div
+            key={index}
+            className="text-center md:w-64 md:mb-0 mb-8 md:h-52"
+            initial="rest"
+            whileHover="hover"
+            animate={activeIndex === index ? "hover" : "rest"}
+            onTouchStart={() => handleTouch(index)}
+          >
+            <motion.div
+              variants={{
+                rest: { opacity: 1 },
+                hover: { opacity: 0.7 },
+              }}
+              className="relative hover:text-[#F29829]"
+            >
+              <img
+                src={item.src}
+                alt={item.alt}
+                title={item.alt}
+                className="mx-auto mb-8"
+              />
+              <h3 className="text-[24px] mb-4 mt-2">{item.title}</h3>
+            </motion.div>
+            <motion.p
+              variants={{
+                rest: { opacity: 0, y: 10 },
+                hover: { opacity: 1, y: 0 },
+              }}
+              transition={{ duration: 0.3 }}
+            >
+              {item.description}
+            </motion.p>
+          </motion.div>
+        ))}
+      </div>
     </div>
   );
 }
