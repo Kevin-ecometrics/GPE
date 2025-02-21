@@ -16,7 +16,7 @@ body {
   overflow-y: scroll;
 }
 
-p {
+p, li {
   font-family: 'Outfit', sans-serif; 
   color: #D2D2D099;
 }

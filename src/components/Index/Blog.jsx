@@ -4,13 +4,13 @@ function Blog() {
   return (
     <div className="scroll-mt-48 " id="blog">
       <div className="md:container mx-auto px-8 md:px-0">
-        <p className="uppercase text-lg mb-8">GACETA</p>
-        <div className="flex justify-between items-start md:items-end mb-8 md:flex-row flex-col">
+        {/* <p className="uppercase text-lg mb-8">GACETA</p> */}
+        <div className="flex justify-between items-start md:items-end mb-8 md:flex-row flex-col px-4">
           <h1 className="text-5xl uppercase">
             GACETA en materia <span className="text-[#F29829]">fiscal</span> y{" "}
             <span className="text-[#F29829]">laboral</span>
           </h1>
-          <div className="flex gap-2 group py-4 md:py-0 px-4">
+          {/* <div className="flex gap-2 group py-4 md:py-0 px-4">
             <a href="/blogs" title="Blogs">
               <p className="uppercase group relative inline-block">
                 Mira todos nuestras publicaciones
@@ -34,10 +34,10 @@ function Blog() {
                 <path d="M13 6l6 6" />
               </svg>
             </a>
-          </div>
+          </div> */}
         </div>
         <div className="flex gap-16 overflow-x-hidden flex-col md:flex-row md:px-4">
-          {blogs.slice(0, 2).map((blog, index) => (
+          {blogs.slice(0, 1).map((blog, index) => (
             <div
               className=" overflow-hidden md:w-[50%] relative group"
               key={index}
@@ -51,12 +51,15 @@ function Blog() {
                 "
               />
               <div className="py-8 flex justify-between flex-col md:flex-row items-start gap-8">
-                <div className="flex-col">
+                <div className="flex-col md:w-[80%]">
                   <h1 className="text-3xl uppercase mb-4">{blog.title}</h1>
                   <p>{blog.description}</p>
                 </div>
-                <div className="md:w-96 w-full h-32 bg-gray-900 group-hover:bg-[#F29829]">
-                  <div className="flex justify-end items-center px-2 mb-4">
+                <a
+                  className="p-3 h-32 w-full md:w-auto bg-gray-900 group-hover:bg-[#F29829]"
+                  href={blog.link}
+                >
+                  <div className="flex justify-end items-center mb-4">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="48"
@@ -76,7 +79,7 @@ function Blog() {
                   <p className="flex justify-center items-center uppercase text-white">
                     leer más
                   </p>
-                </div>
+                </a>
 
                 <div className=" top-5 right-6 absolute bg-black px-4 py-2 rounded-full">
                   <p className="text-white uppercase font-medium">

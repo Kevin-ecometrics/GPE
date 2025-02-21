@@ -10,8 +10,9 @@ function BlogsDinamic() {
       <Header />
       <ContainerLayout>
         <BlogMain />
-        <NewsLetter />
       </ContainerLayout>
+      <NewsLetter />
+
       <Footer />
     </>
   );
