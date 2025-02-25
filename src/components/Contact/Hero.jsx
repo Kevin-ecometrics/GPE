@@ -10,12 +10,14 @@ function Hero() {
       title: "LLámanos",
       description: "+526631216201",
       alt: "GPE consultores esta a una llamada para apoyarte en materia laboral y contable al 664 608 5340",
+      link: "tel:+526631216201",
     },
     {
       src: "/en gpe consultores estamos comprometidos con tu negocio escribenos.webp",
       title: "Escríbenos",
       description: "administracion@gpeconsultores.com.mx",
       alt: "En GPE consultores puedes llenar un formulario para conocer tu situación y apoyarte en la brevedad, escribenos",
+      link: "mailto:administracion@gpeconsultores.com.mx",
     },
     {
       src: "/Nos encontramos en Plaza patria listos para atenderte.webp",
@@ -23,6 +25,7 @@ function Hero() {
       description:
         "Blvd. Gustavo Diaz Ordaz No. 12649 Local 17G-B, El Paraiso, Tijuana, Baja California.",
       alt: " Nos encontramos cerca de ti en plaza patria de lunes a viernes listos para apoyarte",
+      link: "https://maps.app.goo.gl/9CTdD4vkwqsy6Sbu5",
     },
   ];
   const [activeIndex, setActiveIndex] = useState(null);
@@ -96,7 +99,14 @@ function Hero() {
                 }}
                 transition={{ duration: 0.3 }}
               >
-                {item.description}
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white"
+                >
+                  {item.description}
+                </a>{" "}
               </motion.p>
             </motion.div>
           ))}
@@ -134,7 +144,14 @@ function Hero() {
               }}
               transition={{ duration: 0.3 }}
             >
-              {item.description}
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white"
+              >
+                {item.description}
+              </a>{" "}
             </motion.p>
           </motion.div>
         ))}

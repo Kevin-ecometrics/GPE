@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 import { FaFacebook } from "react-icons/fa";
 import { SiGooglemaps } from "react-icons/si";
+import { useLocation } from "react-router-dom";
 
 function Footer() {
   const links = [
@@ -26,6 +28,16 @@ function Footer() {
     (servicio) => URL === `/service/${servicio}`
   );
 
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
   return (
     <div className="md:container mx-auto mt-36 py-8 px-8 md:px-0">
       <div className="grid grid-cols-1 md:grid-cols-2 py-8 mb-12">
@@ -72,10 +84,25 @@ function Footer() {
       <div className="flex  md:justify-between flex-col md:flex-row md:items-center py-12 border-t border-b border-gray-700">
         <div>
           {URL === "/contact" || isServicePage ? (
-            <ul>
+            <ul className="flex space-x-8">
               <a href="/home" title="Inicio">
                 <p className="uppercase cursor-pointer text-sm hover:text-[#F29829]">
                   Inicio
+                </p>
+              </a>
+              <a href="/home#services" title="Servicios">
+                <p className="uppercase cursor-pointer text-sm hover:text-[#F29829]">
+                  Servicios
+                </p>
+              </a>
+              <a href="/home#team" title="Equipo">
+                <p className="uppercase cursor-pointer text-sm hover:text-[#F29829]">
+                  Equipo
+                </p>
+              </a>
+              <a href="/home#reviews" title="Reseñas">
+                <p className="uppercase cursor-pointer text-sm hover:text-[#F29829]">
+                  Reseñas
                 </p>
               </a>
             </ul>

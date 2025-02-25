@@ -2,10 +2,14 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
-import Tower from "@components/Index/Tower";
+// import Tower from "@components/Index/Tower";
 function Experience() {
+  const yearXP = Math.floor(
+    (Date.now() - new Date("2010-01-29").getTime()) /
+      (1000 * 60 * 60 * 24 * 365.25)
+  );
   const yearExperience = [
-    { number: 14, text: "Años de experiencia" },
+    { number: yearXP, text: "Años de experiencia" },
     { number: 80, text: "Clientes satisfechos" },
     { number: 260, text: "Asesorias realizadas" },
   ];
