@@ -11,12 +11,13 @@ const blogs = [
   },
   {
     id: 2,
-    title: "Blog 2",
-    image: "https://miller.bslthemes.com/pixy-demo/img/blog/9.jpg",
+    title: "Registro del uso de Marca: ¿Cuándo y Cómo Declararlo?",
+    image: "/Blog2-Hero.webp",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi. Duis eget justo auctor, ornare nunc in, ultrices odio. Nullam non nisi nec purus ultricies lacinia. Duis eget justo auctor, ornare nunc in, ultrices odio. Nullam non nisi nec purus ultricies lacinia.",
-    date: "2021.10.10",
+      "No pierdas tus derechos de marca y haz tu declaración por primera vez o ratifica al cumplir 3 años con tu registro. GPE consultores te asesora con tu trámite ante el IMPI",
+    date: "04-MAR-2025",
     theme: "fiscal",
+    link: "/blogs/registro-del-uso-de-marca-en-mexico",
   },
   {
     id: 3,

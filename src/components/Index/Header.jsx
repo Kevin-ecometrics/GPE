@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import PoliticasDePrivacidad from "@components/Modal/Privacy";
 import TerminosYCondiciones from "@components/Modal/Terms";
-import SiteMap from "@components/Modal/SiteMap";
+import SiteMap from "@components/Modal/Sitemap";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaFacebook } from "react-icons/fa";
 import { SiGooglemaps } from "react-icons/si";

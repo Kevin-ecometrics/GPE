@@ -37,63 +37,66 @@ function Blog() {
           </div> */}
         </div>
         <div className="flex gap-16 overflow-x-hidden flex-col md:flex-row md:px-4">
-          {blogs.slice(0, 1).map((blog, index) => (
-            <div
-              className=" overflow-hidden md:w-[50%] relative group"
-              key={index}
-            >
-              <img
-                src={blog.image}
-                alt="Blog"
-                title="Blog"
-                className="w-full h-[400px] object-cover
+          {blogs
+            .slice(0, 2)
+            .reverse()
+            .map((blog, index) => (
+              <div
+                className=" overflow-hidden md:w-[50%] relative group"
+                key={index}
+              >
+                <img
+                  src={blog.image}
+                  alt="Blog"
+                  title="Blog"
+                  className="w-full h-[400px] object-cover
                 hover:scale-105 transition-transform duration-300 
                 "
-              />
-              <div className="py-8 flex justify-between flex-col md:flex-row items-start gap-8">
-                <div className="flex-col md:w-[80%]">
-                  <h1 className="text-3xl uppercase mb-4">{blog.title}</h1>
-                  <p>{blog.description}</p>
-                </div>
-                <a
-                  className="p-3 h-32 w-full md:w-auto bg-gray-900 group-hover:bg-[#F29829]"
-                  href={blog.link}
-                >
-                  <div className="flex justify-end items-center mb-4">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="48"
-                      height="48"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="#ffffff"
-                      strokeWidth="2"
-                      className="group-hover:rotate-45 transition-transform duration-300 ease-in-out cursor-pointer"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M17 7l-10 10" />
-                      <path d="M8 7l9 0l0 9" />
-                    </svg>
+                />
+                <div className="py-8 flex justify-between flex-col md:flex-row items-start gap-8">
+                  <div className="flex-col md:w-[80%]">
+                    <h1 className="text-3xl uppercase mb-4">{blog.title}</h1>
+                    <p>{blog.description}</p>
                   </div>
+                  <a
+                    className="p-3 h-32 w-full md:w-auto bg-gray-900 group-hover:bg-[#F29829]"
+                    href={blog.link}
+                  >
+                    <div className="flex justify-end items-center mb-4">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="48"
+                        height="48"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#ffffff"
+                        strokeWidth="2"
+                        className="group-hover:rotate-45 transition-transform duration-300 ease-in-out cursor-pointer"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M17 7l-10 10" />
+                        <path d="M8 7l9 0l0 9" />
+                      </svg>
+                    </div>
 
-                  <p className="flex justify-center items-center uppercase text-white">
-                    leer más
-                  </p>
-                </a>
+                    <p className="flex justify-center items-center uppercase text-white">
+                      leer más
+                    </p>
+                  </a>
 
-                <div className=" top-5 right-6 absolute bg-black px-4 py-2 rounded-full">
-                  <p className="text-white uppercase font-medium">
-                    {blog.date}
-                  </p>{" "}
-                </div>
-                <div className=" top-5 left-6 absolute bg-white  px-4 py-2 rounded-full">
-                  <p className="text-black uppercase font-medium">
-                    {blog.theme}
-                  </p>
+                  <div className=" top-5 right-6 absolute bg-black px-4 py-2 rounded-full">
+                    <p className="text-white uppercase font-medium">
+                      {blog.date}
+                    </p>{" "}
+                  </div>
+                  <div className=" top-5 left-6 absolute bg-white  px-4 py-2 rounded-full">
+                    <p className="text-black uppercase font-medium">
+                      {blog.theme}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
         </div>
       </div>
     </div>
