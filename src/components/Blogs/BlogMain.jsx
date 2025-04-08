@@ -43,6 +43,25 @@ function BlogMain() {
     },
   };
 
+  const schemablog3 = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline:
+      "Documentos que tienes que tener si eres patrón o vas a emprender ",
+    description:
+      "Te damos la lista de responsabilidades y documentos que debes solicitar y entregar a tus empleados desde el día 1.  Te ayudamos somos expertos",
+    author: {
+      "@type": "Person",
+      name: "GPE Consultores",
+    },
+    datePublished: "2025-04-04",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id":
+        "https://gpeconsultores.com.mx/blogs/documentos-y-obligaciones-patronales",
+    },
+  };
+
   const navigate = useNavigate();
   const id = window.location.pathname.split("/")[2];
   const paths = [
@@ -55,6 +74,11 @@ function BlogMain() {
       id: "2",
       tema: "Blog 2",
       url: "/blogs/registro-del-uso-de-marca-en-mexico",
+    },
+    {
+      id: "3",
+      tema: "Blog 3",
+      url: "/blogs/documentos-y-obligaciones-patronales",
     },
   ];
 
@@ -682,6 +706,233 @@ function BlogMain() {
             </div>
           ))}
         </div> */}
+            </div>
+          </div>
+        ) : blog.url === "/blogs/documentos-y-obligaciones-patronales" ? (
+          <div>
+            <Helmet>
+              <title>
+                Documentos que tienes que tener si eres patrón o vas a emprender
+              </title>
+              <script type="application/ld+json">
+                {JSON.stringify(schemablog3)}
+              </script>
+            </Helmet>
+            <div className="container mx-auto px-8 py-32 md:py-32">
+              <a href="/home">
+                <p className=" hover:text-white uppercase text-center mb-12">
+                  Inicio &nbsp; / &nbsp;{" "}
+                  <span className="text-[#F29829]">publicación </span>
+                </p>
+              </a>
+
+              <h1 className="text-center text-3xl md:text-5xl uppercase mb-16">
+                Documentos que tienes que tener si eres patrón o vas a emprender
+              </h1>
+
+              <div className="flex justify-center items-center flex-col">
+                <div className="overflow-hidden w-full max-w-4xl ">
+                  <img
+                    ref={(el) => imagesRef.current.push(el)}
+                    src="/Blog3-Hero.webp"
+                    alt=""
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+
+                <div className="md:w-[60%]">
+                  <p className="py-8 text-white mb-8 text-4xl">
+                    Estos son los documentos clave que debes tener desde el día
+                    1 si eres patrón o vas a emprender{" "}
+                  </p>
+                  <p className="text-xl">
+                    Tener un negocio o empresa necesita de una buena dosis de
+                    gestión y una administración impecable, pero de lo que no te
+                    hablan es del recurso humano y la lista de
+                    responsabilidades, que de acuerdo con el artículo 804 de la
+                    Ley Federal de Trabajo, debes cumplir desde el día 1
+                    <br /> <br />
+                    ¿Por qué? para que tus empleados estén protegidos y de paso
+                    proteger el patrimonio que estas construyendo.
+                  </p>
+                  <p className="py-8 text-white mb-8 text-4xl">
+                    Te decimos los documentos clave que no te pueden faltar como
+                    patrón o emprendedor.{" "}
+                  </p>
+                  <p className="text-2xl mb-4 text-white">
+                    Como Patrón deberás conservar la siguiente documentación:
+                  </p>
+                  <ol className="list-decimal text-xl space-y-4 px-6">
+                    <li>
+                      Contratos individuales escritos (Que sean escritos
+                      protegen ambas partes).
+                    </li>
+                    <li>
+                      Nómina o recibidos de pagos de salarios (Evita confusiones
+                      o problemas legales).
+                    </li>
+                    <li>
+                      Controles de asistencia (Garantizan un seguimiento y
+                      respaldo).
+                    </li>
+                    <li>
+                      Comprobantes de pago de utilidades, vacaciones, aguinaldos
+                      y primas (Son obligaciones que no pueden faltar).
+                    </li>
+                    <li>
+                      Pagos, aportaciones y cuotas de seguridad social (Dan
+                      legitimización y seguridad ante el IMSS e INFONAVIT).
+                    </li>
+                    <li>
+                      Expedir constancias laborales cuando los trabajadores las
+                      soliciten.
+                    </li>
+                    <li>
+                      Contar con la documentación y permisos a la mano, así como
+                      los reglamentos y capacitaciones para los colaboradores.
+                    </li>
+                    <li>Hacer las deducciones que soliciten los sindicatos.</li>
+                  </ol>
+                </div>
+                <div className="flex gap-4 justify-center items-center md:w-[70%] py-16 md:flex-row flex-col">
+                  <div className="overflow-hidden">
+                    <img
+                      ref={(el) => imagesRef.current.push(el)}
+                      src="/blog3-1.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div className="overflow-hidden ">
+                    <img
+                      ref={(el) => imagesRef.current.push(el)}
+                      src="/blog3-2.webp"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div className="md:w-[60%]">
+                  <p className="py-8 text-white text-4xl">
+                    ¿Cómo organizar todo esto?{" "}
+                  </p>
+                  <p className="text-xl mb-4">
+                    La llave maestra de esto se llama: Expediente laboral que te
+                    permite
+                  </p>
+                  <ol className="list-decimal text-xl space-y-4 px-6">
+                    <li>Organizar </li>
+                    <li>
+                      Acceder de forma rápida (Desde un CURP hasta sus
+                      vacaciones)
+                    </li>
+                    <li>Evitar multas y problemas legales.</li>
+                    <li>
+                      Este expediente debe conservarse durante la relación
+                      laboral y hasta un año después de su conclusión.{" "}
+                    </li>
+                  </ol>
+                  <p className="py-8 text-white text-4xl">
+                    ¿Qué va dentro del expediente laboral?{" "}
+                  </p>
+
+                  <p className="text-2xl mb-4 text-white">Al inicio:</p>
+                  <ol className="list-decimal text-xl space-y-4 px-6 mb-4">
+                    <li>
+                      Identificación oficial vigente con fotografía, CURP, RFC,
+                      Número del Seguro Social.{" "}
+                    </li>
+                    <li>
+                      Comprobante de domicilio,curriculum vitae, constancias de
+                      estudio, cartas de recomendaciones o referencias
+                      personales y constancia de no antecedentes penales.
+                    </li>
+                    <li>
+                      Contrato individual de trabajo (en cualquiera de sus
+                      modalidades).
+                    </li>
+                    <li>
+                      Carta de recepción de material, herramientas o equipo.
+                    </li>
+                    <li>
+                      Carta de recepción de reglamento interno de trabajo.
+                    </li>
+                  </ol>
+
+                  <p className="text-2xl mb-4 text-white">
+                    {" "}
+                    Con el paso del tiempo deben agregarse los siguientes:
+                  </p>
+
+                  <ol className="list-decimal text-xl space-y-4 px-6 mb-4">
+                    <li>Recibos de nómina, pagos de aguinaldo.</li>
+                    <li>
+                      Permisos, incapacidades, avisos de accidentes y actas
+                      administrativas, avisos de accidentes o enfermedades (ST-7
+                      o ST-9).
+                    </li>
+                    <li>Constancias de habilidades (DC-3).</li>
+                    <li>Formatos de permisos generales o de horas extras. </li>
+                    <li>Constancias médicas. </li>
+                  </ol>
+
+                  <p className="py-8 text-white text-4xl">
+                    ¿Qué pasa si no cumplo con estos documentos y obligaciones?{" "}
+                  </p>
+                  <p className="text-xl mb-8 mt-8">
+                    Puedes meterte en problemas complejos, desde multas desde 50
+                    hasta 5,000 veces el valor de la UMA vigente, la clausura de
+                    tu negocio o incluso cárcel.
+                  </p>
+                  <p className="py-8 text-xl">
+                    Todo este listado de documentos son obligaciones y derechos
+                    que se deben proporcionar para garantizar condiciones dignas
+                    y justas a tus colaboradores, puede sonar abrumador, pero
+                    cumplir con todo esto no solo te ahorra problemas serios si
+                    no que te permite afianzar tu negocio hacia una certidumbre
+                    jurídica.
+                  </p>
+                  <p className="text-xl">
+                    Si aun tienes dudas sobre las normas y obligaciones que te
+                    corresponden de acuerdo con el giro de tu empresa o
+                    emprendimiento, te podemos ayudar. Nos encontramos en
+                    Tijuana con más de 15 años de experiencia respaldando a
+                    empresas y emprendimientos
+                  </p>
+                </div>
+              </div>
+              <Reviews URL={blog.id} />
+              <FormBlog URL={blog.id} />
+              {/* <h1 className="uppercase text-5xl py-16">
+        Blogs <span className="text-[#F29829] font-bold">similares</span>{" "}
+      </h1>
+      <div className="flex gap-8">
+        {Recent.map(({ image, title, description, theme, date, id }) => (
+          <div key={id} className="group cursor-pointer relative">
+            <a href="/">
+              <img
+                className="no-animate transition-transform duration-300 ease-in-out transform"
+                src={image}
+                alt={title}
+              />
+              <div className="flex flex-col md:flex-row gap-8 py-4 ">
+                {" "}
+                <div>
+                  <h2>{title}</h2>
+                  <p>{description}</p>
+                  <p className="absolute top-4 left-4 p-4 bg-black text-white rounded-full">
+                    {theme}
+                  </p>
+                  <p className="absolute top-4 right-4 p-4 bg-black text-white rounded-full">
+                    {date}
+                  </p>
+                </div>
+                <div className="h-32 w-64 p-4 flex justify-center items-center bg-gray-900  group-hover:bg-[#F29829]">
+                  <h3 className="uppercase">Saber más</h3>
+                </div>{" "}
+              </div>
+            </a>
+          </div>
+        ))}
+      </div> */}
             </div>
           </div>
         ) : null

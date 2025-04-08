@@ -21,12 +21,14 @@ const blogs = [
   },
   {
     id: 3,
-    title: "Blog 3",
-    image: "https://miller.bslthemes.com/pixy-demo/img/blog/9.jpg",
+    title:
+      "Evita problemas con tu negocio y arranca con el pie derecho: Lista de documentos y obligaciones que debe tener un patrón",
+    image: "/Blog3-Hero.webp",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi. Duis eget justo auctor, ornare nunc in, ultrices odio. Nullam non nisi nec purus ultricies lacinia. Duis eget justo auctor, ornare nunc in, ultrices odio. Nullam non nisi nec purus ultricies lacinia.",
-    date: "2021.10.10",
-    theme: "fiscal",
+      "Te explicamos en detalle los documentos y obligaciones que debes tener desde el primer día al ser patrón. En GPE, te ofrecemos asesoría contable y fiscal en Tijuana",
+    date: "04-ABR-2025",
+    theme: "laboral",
+    link: "/blogs/documentos-y-obligaciones-patronales",
   },
 ];
 
