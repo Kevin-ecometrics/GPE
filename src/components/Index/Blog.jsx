@@ -1,10 +1,12 @@
 import blogs from "@components/Index/ListBlogs";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 function Blog() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isDragging, setIsDragging] = useState(false); // Estado para manejar el cursor
+  const carouselRef = useRef(null);
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % blogs.length);
@@ -16,9 +18,27 @@ function Blog() {
     );
   };
 
+  const handleDragStart = () => {
+    setIsDragging(true); // Cambiar el estado para indicar que se está arrastrando
+  };
+
+  const handleDragEnd = (event, info) => {
+    setIsDragging(false); // Restablecer el estado del cursor
+    const offset = info.offset.x; // Distancia arrastrada
+    const width = carouselRef.current.offsetWidth / 2; // Ancho de un elemento (50% del carrusel)
+
+    if (offset < -width / 4) {
+      // Arrastrar hacia la izquierda
+      setCurrentIndex((prevIndex) => Math.min(prevIndex + 1, blogs.length - 1));
+    } else if (offset > width / 4) {
+      // Arrastrar hacia la derecha
+      setCurrentIndex((prevIndex) => Math.max(prevIndex - 1, 0));
+    }
+  };
+
   return (
     <div className="scroll-mt-48 relative " id="blog">
-      <div className="md:container mx-auto px-8 md:px-0">
+      <div className="md:container mx-auto px-8 md:px-24">
         <div className="flex justify-between items-start md:items-end mb-8 md:flex-row flex-col md:px-4">
           <h1 className="text-5xl uppercase">
             GACETA en materia <span className="text-[#F29829]">fiscal</span> y{" "}
@@ -29,38 +49,51 @@ function Blog() {
           {/* Botón izquierdo */}
           <button
             onClick={handlePrev}
-            className="bg-gray-900 text-white p-3 hidden md:block rounded-full hover:bg-[#F29829] transition-colors absolute left-24"
+            className="bg-gray-900 text-white p-3 hidden md:block rounded-full hover:bg-[#F29829] transition-colors absolute left-4 z-50"
           >
             <FaChevronLeft size={24} />
           </button>
 
           {/* Carrusel */}
-          <div className="relative overflow-hidden  hidden md:block">
+          <div
+            className="relative overflow-hidden  hidden md:block "
+            ref={carouselRef}
+          >
             <motion.div
-              className="flex"
+              className={`flex transition-transform duration-75 ease-in-out ${
+                isDragging ? "cursor-grabbing" : "cursor-grab"
+              }`}
               initial={{ x: 0 }}
-              animate={{ x: `-${currentIndex * 50}%` }}
-              transition={{ duration: 0.5, ease: "easeInOut" }}
-              style={{ width: `${blogs.length * 50}%` }}
+              animate={{ translateX: `-${currentIndex * 50}%` }} // Usar Tailwind para manejar el desplazamiento
+              drag="x"
+              dragConstraints={{ left: 0, right: 0 }}
+              onDragStart={handleDragStart}
+              onDragEnd={handleDragEnd}
             >
               {[...blogs].reverse().map((blog, index) => (
-                <div
+                <motion.div
                   className="w-[50%] flex-shrink-0 px-4"
                   key={index}
-                  style={{ flex: "0 0 50%" }}
+                  whileTap={{ scale: 0.95 }}
                 >
                   <div className="overflow-hidden relative group">
-                    <img
-                      src={blog.image}
-                      alt="Blog"
-                      title="Blog"
-                      className="w-full h-[400px] object-cover hover:scale-105 transition-transform duration-300"
-                    />
+                    <a href={blog.link}>
+                      <img
+                        src={blog.image}
+                        alt="Blog"
+                        title="Blog"
+                        className="w-full h-[400px] object-cover hover:scale-105 transition-transform duration-300"
+                      />
+                    </a>
+
                     <div className="py-8 flex justify-between flex-col md:flex-row items-start gap-8">
                       <div className="flex-col md:w-[80%]">
-                        <h1 className="text-3xl uppercase mb-4">
-                          {blog.title}
-                        </h1>
+                        <a href={blog.link}>
+                          <h1 className="text-3xl uppercase mb-4">
+                            {blog.title}
+                          </h1>
+                        </a>
+
                         <p>{blog.description}</p>
                       </div>
                       <a
@@ -99,23 +132,19 @@ function Blog() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </motion.div>
           </div>
 
           {/* Carrusel para móviles */}
           <div className="md:hidden flex flex-col gap-4">
-            {blogs.map((blog, index) => (
+            {[...blogs].reverse().map((blog, index) => (
               <div
                 key={index}
                 className="flex flex-col cursor-pointer relative"
               >
-                <img
-                  className="h-96 w-[1100px]"
-                  src={blog.image}
-                  alt={blog.title}
-                />
+                <img src={blog.image} alt={blog.title} />
                 <div className="flex gap-8">
                   <p className="absolute top-4 left-4 p-4 bg-black text-white rounded-full">
                     {blog.theme}
@@ -125,7 +154,7 @@ function Blog() {
                   </p>
                 </div>
                 <div className="py-12 px-0">
-                  <h2 className="text-5xl mb-8">{blog.title}</h2>
+                  <h2 className="text-2xl mb-8">{blog.title}</h2>
                   <p className="text-xl mb-8 md:w-[80%]">{blog.description}</p>
                   <button className="bg-[#F29829] hover:opacity-80 rounded-full px-16 py-6">
                     <p className="text-white uppercase">Leer más</p>
@@ -138,7 +167,7 @@ function Blog() {
           {/* Botón derecho */}
           <button
             onClick={handleNext}
-            className="bg-gray-900 text-white p-3 rounded-full hidden md:block hover:bg-[#F29829] transition-colors absolute right-24"
+            className="bg-gray-900 text-white p-3 rounded-full hidden md:block hover:bg-[#F29829] transition-colors absolute right-4 z-50"
           >
             <FaChevronRight size={24} />
           </button>
