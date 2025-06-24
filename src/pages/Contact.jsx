@@ -13,7 +13,6 @@ function Contact() {
         <Hero />
         <Form />
       </ContainerLayout>
-
       <NewsLetter />
       <Footer />
     </div>

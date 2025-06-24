@@ -26,7 +26,7 @@ function Service() {
   useEffect(() => {
     const index = list.indexOf(id);
     if (index === -1) {
-      window.location.href = "/";
+      window.location.href = "/home/";
     } else {
       setDescription(text[index]);
     }
