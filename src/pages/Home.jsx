@@ -14,10 +14,14 @@ import Blog from "@components/Index/Blog";
 import NewsLetter from "@components/Index/NewsLetter";
 import { motion, AnimatePresence } from "framer-motion";
 import ScrollProgress from "@components/Index/ScrollProgress";
+import { Helmet } from "react-helmet-async";
 
 function Index() {
   return (
     <div>
+      <Helmet>
+        <link rel="canonical" href="https://gpeconsultores.com.mx/home/" />
+      </Helmet>
       <ScrollProgress />
       <AnimatePresence mode="popLayout">
         <motion.div>

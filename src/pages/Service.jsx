@@ -10,11 +10,13 @@ import Tema4 from "@components/Service/Tema4";
 import { useLocation } from "react-router-dom";
 import Footer from "@components/Index/Footer";
 import NewsLetter from "@components/Index/NewsLetter";
+import { Helmet } from "react-helmet-async";
 
 function Service() {
   const pathname = useLocation().pathname;
   const id = pathname.replace(/\/$/, "").split("/").pop();
   const [description, setDescription] = useState("");
+  const canonical = `https://gpeconsultores.com.mx${pathname}`;
 
   const titlesWithAccents = {
     "Logistica-corporativa": "Logística corporativa",
@@ -36,6 +38,9 @@ function Service() {
 
   return (
     <div className="overflow-x-hidden">
+      <Helmet>
+        <link rel="canonical" href={canonical} />
+      </Helmet>
       <Header />
       <ContainerLayout>
         <Hero title={formattedText} subtitle={description} />

@@ -16,6 +16,7 @@ import NewsLetter from "@components/Index/NewsLetter";
 import Loader from "@components/Animation/Loader";
 import { motion, AnimatePresence } from "framer-motion";
 import ScrollProgress from "@components/Index/ScrollProgress";
+import { Helmet } from "react-helmet-async";
 
 function Index() {
   const [isLoading, setIsLoading] = useState(true);
@@ -33,6 +34,9 @@ function Index() {
   }
   return (
     <>
+      <Helmet>
+        <link rel="canonical" href="https://gpeconsultores.com.mx/" />
+      </Helmet>
       <ScrollProgress />
       <AnimatePresence mode="popLayout">
         <motion.div>
