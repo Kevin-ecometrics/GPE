@@ -23,7 +23,7 @@ const Hero = ({ title, subtitle }) => {
   return (
     <div className=" uppercase flex justify-center items-center flex-col py-32">
       <div className="flex mb-8 md:mb-0">
-        <a href="/home">
+        <a href="/home/">
           <p className="hover:text-white">Inicio </p>
         </a>
         &nbsp;

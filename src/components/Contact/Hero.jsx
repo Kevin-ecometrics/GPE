@@ -37,7 +37,7 @@ function Hero() {
   return (
     <div className=" uppercase flex justify-center items-center flex-col py-32 md:py-32">
       <div className="flex">
-        <a href="/home">
+        <a href="/home/">
           <p className="hover:text-white">Inicio </p>
         </a>
         &nbsp;

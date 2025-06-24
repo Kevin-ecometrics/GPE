@@ -417,7 +417,7 @@ function BlogMain() {
               </script>
             </Helmet>
             <div className="container mx-auto px-8 py-32 md:py-32">
-              <a href="/home">
+              <a href="/home/">
                 <p className=" hover:text-white uppercase text-center mb-12">
                   Inicio &nbsp; / &nbsp;{" "}
                   <span className="text-[#F29829]">publicación </span>
