@@ -50,7 +50,7 @@ function Contact() {
         </div>
         <div className="bg-[#F29829] h-[120px] w-[320px] flex justify-center items-center">
           <Observer>
-            <a href="/contact" title="Contacto">
+            <a href="/contact/" title="Contacto">
               <p className="text-white uppercase rounded-3xl border px-8 py-4 font-bold hover:bg-white hover:text-[#F29829] hover:border-[#F29829] transition-all duration-300 cursor-pointer">
                 Contáctanos
               </p>

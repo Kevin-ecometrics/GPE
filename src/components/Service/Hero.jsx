@@ -19,7 +19,6 @@ const Hero = ({ title, subtitle }) => {
     },
   ];
 
-  console.log(title);
   const text = String(title);
   return (
     <div className=" uppercase flex justify-center items-center flex-col py-32">

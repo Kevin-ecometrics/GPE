@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import { useState, useEffect } from "react";
-// import blogs from "@components/Index/ListBlogs";
 import { useLocation } from "react-router-dom";
 import PoliticasDePrivacidad from "@components/Modal/Privacy";
 import TerminosYCondiciones from "@components/Modal/Terms";
@@ -22,19 +21,34 @@ function Header() {
   const listService = [
     {
       name: "Logistica corporativa",
-      link: "/service/Logistica-corporativa",
+      link: "/service/Logistica-corporativa/",
     },
     {
       name: "Asesoria administrativa",
-      link: "/service/Asesoria-administrativa",
+      link: "/service/Asesoria-administrativa/",
     },
     {
       name: "Asesoria contable",
-      link: "/service/Asesoria-contable",
+      link: "/service/Asesoria-contable/",
     },
     {
       name: "Representación y asesoría Legal",
-      link: "/service/Representacion-y-Asesoria-legal",
+      link: "/service/Representacion-y-Asesoria-legal/",
+    },
+  ];
+
+  const listBlog = [
+    {
+      link: "/blogs/prima-riesgo-imss-2025-presentala-tiempo-evita-sanciones/",
+      name: "Prima de Riesgo IMSS 2025: Preséntala a Tiempo y Evita Sanciones",
+    },
+    {
+      link: "/blogs/registro-del-uso-de-marca-en-mexico/",
+      name: "Registro del uso de Marca: ¿Cuándo y Cómo Declararlo?",
+    },
+    {
+      link: "/blogs/documentos-y-obligaciones-patronales/",
+      name: "Evita problemas con tu negocio y arranca con el pie derecho: Lista de documentos y obligaciones que debe tener un patrón",
     },
   ];
 
@@ -85,6 +99,9 @@ function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const showBlogList =
+    urlMain === "/blogs/" || listBlog.some((item) => urlMain === item.link);
 
   const Modal = ({ isOpen, content, onClose }) => {
     if (!isOpen) return null;
@@ -144,7 +161,7 @@ function Header() {
       <Modal isOpen={modalIsOpen} content={modalContent} onClose={closeModal} />
       <div className="container mx-auto flex justify-between items-center py-4  h-[140px] md:px-0 px-4">
         <div className="flex gap-4 items-center">
-          <a href="/home" title="Home">
+          <a href="/home/" title="Home">
             <img
               src={Logo}
               alt="Somos una firma que ofrece soluciones en materia fiscal y laboral con más de 20 años de experiencia"
@@ -168,7 +185,7 @@ function Header() {
 
         {menu
           ? null
-          : (urlMain === "/home" || urlMain === "/") && (
+          : (urlMain === "/home/" || urlMain === "/") && (
               <ul className="md:flex hidden relative z-30">
                 {list.map((item, index) => (
                   <a
@@ -192,7 +209,7 @@ function Header() {
             )}
 
         <div className="flex gap-4 items-center">
-          <a href="/contact" title="contacto">
+          <a href="/contact/" title="contacto">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -251,7 +268,7 @@ function Header() {
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 container mx-auto h-screen md:px-0 px-4">
             <div className="md:py-24">
-              {(urlMain === "/" || urlMain === "/home") && (
+              {(urlMain === "/" || urlMain === "/home/") && (
                 <ul className=" uppercase text-2xl ">
                   {list.map((item, index) => (
                     <li key={index} className="mb-4 py-4">
@@ -260,6 +277,24 @@ function Header() {
                         title={item.name}
                         onClick={() => handleURLMenu(item.link)}
                         className="hover:text-white"
+                      >
+                        {item.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              )}
+              {showBlogList && (
+                <ul className="text-2xl">
+                  {listBlog.map((item, index) => (
+                    <li key={index} className="mb-4 py-4">
+                      <a
+                        href={item.link}
+                        title={item.name}
+                        onClick={() => handleURLMenu(item.link)}
+                        className={`hover:text-white uppercase ${
+                          urlMain === item.link ? "text-[#F29829]" : ""
+                        }`}
                       >
                         {item.name}
                       </a>
@@ -285,7 +320,7 @@ function Header() {
                   ))}
                 </ul>
               )}
-              {urlMain === "/contact" && (
+              {urlMain === "/contact/" && (
                 <div className="flex flex-col gap-4">
                   <p className="text-2xl uppercase text-white">
                     Información de contacto
@@ -313,7 +348,7 @@ function Header() {
                   </a>
                 </div>
               )}
-              {urlMain === "/blogs" && (
+              {urlMain === "/blogs/" && (
                 <div className="flex flex-col gap-4">
                   <p className="text-2xl uppercase text-white">
                     Información de contacto
@@ -373,7 +408,7 @@ function Header() {
                   </a>
                 </div>
               )}
-              {urlMain === "/team" && (
+              {urlMain === "/team/" && (
                 <div className="flex flex-col gap-4">
                   <p className="text-2xl uppercase text-white">
                     Información de contacto

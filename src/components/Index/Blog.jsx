@@ -89,7 +89,7 @@ function Blog() {
                     <div className="py-8 flex justify-between flex-col md:flex-row items-start gap-8">
                       <div className="flex-col md:w-[80%]">
                         <a href={blog.link}>
-                          <h1 className="text-3xl uppercase mb-4">
+                          <h1 className="text-3xl uppercase mb-4 hover:text-[#F29829]">
                             {blog.title}
                           </h1>
                         </a>

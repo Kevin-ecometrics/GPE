@@ -13,7 +13,7 @@ import NewsLetter from "@components/Index/NewsLetter";
 
 function Service() {
   const pathname = useLocation().pathname;
-  const id = pathname.split("/").pop();
+  const id = pathname.replace(/\/$/, "").split("/").pop();
   const [description, setDescription] = useState("");
 
   const titlesWithAccents = {

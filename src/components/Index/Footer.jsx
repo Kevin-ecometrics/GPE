@@ -7,9 +7,9 @@ import { useLocation } from "react-router-dom";
 function Footer() {
   const links = [
     { title: "Inicio", link: "#hero" },
-    { title: "Servicios", link: "#services" },
-    { title: "Equipo", link: "#team" },
-    { title: "Reseñas", link: "#reviews" },
+    { title: "Servicios", link: "/#services" },
+    { title: "Equipo", link: "/#team" },
+    { title: "Reseñas", link: "/#reviews" },
     // { title: "Blog", link: "#blog" },
   ];
 
@@ -72,7 +72,7 @@ function Footer() {
               </svg>
             </div>
 
-            <a href="/contact" title="contacto">
+            <a href="/contact/" title="contacto">
               <p className="flex text-2xl group-hover:text-white justify-center items-center px-8">
                 Comenzar
               </p>
@@ -83,24 +83,33 @@ function Footer() {
       </div>
       <div className="flex  md:justify-between flex-col md:flex-row md:items-center py-12 border-t border-b border-gray-700">
         <div>
-          {URL === "/contact" || isServicePage ? (
+          {URL === "/contact/" ||
+          URL ===
+            "/blogs/prima-riesgo-imss-2025-presentala-tiempo-evita-sanciones/" ||
+          URL === "/blogs/registro-del-uso-de-marca-en-mexico/" ||
+          URL === "/blogs/documentos-y-obligaciones-patronales/" ||
+          URL === "/service/Logistica-corporativa/" ||
+          URL === "/service/Asesoria-administrativa/" ||
+          URL === "/service/Asesoria-contable/" ||
+          URL === "/service/Representacion-y-Asesoria-legal/" ||
+          isServicePage ? (
             <ul className="flex space-x-8">
-              <a href="/home" title="Inicio">
+              <a href="/home/" title="Inicio">
                 <p className="uppercase cursor-pointer text-sm hover:text-[#F29829]">
                   Inicio
                 </p>
               </a>
-              <a href="/home#services" title="Servicios">
+              <a href="/home/#services" title="Servicios">
                 <p className="uppercase cursor-pointer text-sm hover:text-[#F29829]">
                   Servicios
                 </p>
               </a>
-              <a href="/home#team" title="Equipo">
+              <a href="/home/#team" title="Equipo">
                 <p className="uppercase cursor-pointer text-sm hover:text-[#F29829]">
                   Equipo
                 </p>
               </a>
-              <a href="/home#reviews" title="Reseñas">
+              <a href="/home/#reviews" title="Reseñas">
                 <p className="uppercase cursor-pointer text-sm hover:text-[#F29829]">
                   Reseñas
                 </p>

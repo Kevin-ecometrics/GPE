@@ -7,7 +7,7 @@ const blogs = [
       "Tienes hasta el 28 de febrero para presentar tu prima si eres Patrón. En GPE te explicamos brevemente todo lo que requieres.",
     date: "20-FEB-2025",
     theme: "laboral",
-    link: "/blogs/prima-riesgo-imss-2025-presentala-tiempo-evita-sanciones",
+    link: "/blogs/prima-riesgo-imss-2025-presentala-tiempo-evita-sanciones/",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const blogs = [
       "No pierdas tus derechos de marca y haz tu declaración por primera vez o ratifica al cumplir 3 años con tu registro. GPE consultores te asesora con tu trámite ante el IMPI",
     date: "04-MAR-2025",
     theme: "fiscal",
-    link: "/blogs/registro-del-uso-de-marca-en-mexico",
+    link: "/blogs/registro-del-uso-de-marca-en-mexico/",
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const blogs = [
       "Te explicamos en detalle los documentos y obligaciones que debes tener desde el primer día al ser patrón. En GPE, te ofrecemos asesoría contable y fiscal en Tijuana",
     date: "04-ABR-2025",
     theme: "laboral",
-    link: "/blogs/documentos-y-obligaciones-patronales",
+    link: "/blogs/documentos-y-obligaciones-patronales/",
   },
 ];
 

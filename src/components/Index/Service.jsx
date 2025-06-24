@@ -11,25 +11,25 @@ function Service() {
   const services = [
     {
       title: "Logística corporativa",
-      link: "/service/Logistica-corporativa",
+      link: "/service/Logistica-corporativa/",
       description:
         "Explora a fondo los servicios que brindamos y que te permitirán operar tu negocio dentro del marco normativo correspondiente.",
     },
     {
       title: "Asesoría Administrativa",
-      link: "/service/Asesoria-administrativa",
+      link: "/service/Asesoria-administrativa/",
       description:
         "Conoce a fondo el elemento esencial para la óptima gestión, control de recurso y talento humano; asegurando el estricto cumplimiento de las regulaciones vigentes y fomentando la retención talento. ",
     },
     {
       title: "Asesoría contable",
-      link: "/service/Asesoria-contable",
+      link: "/service/Asesoria-contable/",
       description:
         "Adéntrate en la pieza imprescindible para el patrimonio de tu empresa dónde te proporcionamos un acompañamiento y asesoría integral asegurando una planeación estratégica alineada a los objetivos financieros de tu empresa.",
     },
     {
       title: "Representación y asesoría legal",
-      link: "/service/Representacion-y-Asesoria-legal",
+      link: "/service/Representacion-y-Asesoria-legal/",
       description:
         "Conoce como desarrollar y/o fortaecer la estructura legal de tu empresa, la cual te permitirá regir las relaciones laborales con la plantilla personal y garantizar el cumplimiento de las obligaciones contenidas en la normatividad vigente.",
     },
