@@ -655,10 +655,10 @@ function BlogMain() {
                     No pierdas tus derechos de marca, te ayudamos a protegerla.
                     Nos encontramos en Tijuana, Baja California. Llama al:{" "}
                     <a
-                      href="tel:+526631216201"
+                      href="tel:+526641070938"
                       className="text-blue-400 hover:underline"
                     >
-                      663 121 6201
+                      664 107 09 38
                     </a>{" "}
                     o contáctanos
                     <a

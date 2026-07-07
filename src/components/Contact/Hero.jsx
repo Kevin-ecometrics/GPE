@@ -6,11 +6,11 @@ function Hero() {
   const text = "EXPLORA NUEVAS ";
   const images = [
     {
-      src: "/llama a gpe Consultores al 664 608 5340.webp",
+       src: "/llama a gpe Consultores al 664 107 09 38.webp",
       title: "LLámanos",
-      description: "+526631216201",
-      alt: "GPE consultores esta a una llamada para apoyarte en materia laboral y contable al 664 608 5340",
-      link: "tel:+526631216201",
+      description: "+526641070938",
+      alt: "GPE consultores esta a una llamada para apoyarte en materia laboral y contable al 664 107 09 38",
+      link: "tel:+526641070938",
     },
     {
       src: "/en gpe consultores estamos comprometidos con tu negocio escribenos.webp",

@@ -325,8 +325,8 @@ function Header() {
                   <p className="text-2xl uppercase text-white">
                     Información de contacto
                   </p>{" "}
-                  <a href="tel:6631216201" className="text-lg hover:text-white">
-                    <p className="text-lg hover:text-white">Tel: 6631216201</p>
+                  <a href="tel:6641070938" className="text-lg hover:text-white">
+                    <p className="text-lg hover:text-white">Tel: 6641070938</p>
                   </a>
                   <a
                     href="mailto:administracion@gpeconsultores.com.mx"
@@ -353,9 +353,9 @@ function Header() {
                   <p className="text-2xl uppercase text-white">
                     Información de contacto
                   </p>{" "}
-                  <a href="tel:6646085340" className="text-lg hover:text-white">
+                  <a href="tel:6641070938" className="text-lg hover:text-white">
                     <p className="text-lg hover:text-white">
-                      Tel: 664 608 53 40
+                      Tel: 664 107 09 38
                     </p>
                   </a>
                   <a
@@ -383,9 +383,9 @@ function Header() {
                   <p className="text-2xl uppercase text-white">
                     Información de contacto
                   </p>{" "}
-                  <a href="tel:6646085340" className="text-lg hover:text-white">
+                  <a href="tel:6641070938" className="text-lg hover:text-white">
                     <p className="text-lg hover:text-white">
-                      Tel: 664 608 53 40
+                      Tel: 664 107 09 38
                     </p>
                   </a>
                   <a
@@ -413,9 +413,9 @@ function Header() {
                   <p className="text-2xl uppercase text-white">
                     Información de contacto
                   </p>{" "}
-                  <a href="tel:6646085340" className="text-lg hover:text-white">
+                  <a href="tel:6641070938" className="text-lg hover:text-white">
                     <p className="text-lg hover:text-white">
-                      Tel: 664 608 53 40
+                      Tel: 664 107 09 38
                     </p>
                   </a>
                   <a
